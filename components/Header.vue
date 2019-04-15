@@ -1,5 +1,22 @@
 <template>
   <div>
+    <vue-particles
+      color="#fafafa"
+      :particleOpacity="0.5"
+      linesColor="#fafafa"
+      :particlesNumber="100"
+      shapeType="circle"
+      :particleSize="3"
+      :linesWidth="1"
+      :lineLinked="true"
+      :lineOpacity="0.2"
+      :linesDistance="200"
+      :moveSpeed="1"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      clickMode="push"
+    ></vue-particles>
     <section class="hero is-medium header-nav">
       <div class="hero-head">
         <nav class="navbar">
@@ -71,6 +88,7 @@
 
 <script>
 export default {
+  components: {},
   data() {
     return {
       showNav: false
@@ -83,6 +101,11 @@ export default {
 @import "~/assets/css/angled-edges.scss";
 @import "~/assets/css/main.scss";
 
+#particles-js {
+  background-color: $dark-blue;
+  max-height: 200px;
+}
+
 .hero {
   z-index: 0;
   height: 700px;
@@ -94,6 +117,10 @@ export default {
   );
 }
 
+/* .hero-head {
+  margin-top: -750px;
+} */
+
 .nui-logo {
   height: 100px;
   max-height: 200px !important;
@@ -101,7 +128,6 @@ export default {
 }
 
 .navbar {
-  margin-top: 50px;
   @include main-width;
 }
 
