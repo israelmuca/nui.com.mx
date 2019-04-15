@@ -1,3 +1,9 @@
 [build]
   publish = "dist/"
   command = "npm run generate"
+  functions = "./functions"
+
+[context.production]
+  [context.production.environment]
+    API_URL = "https://nui.netlify.com"
+    BASE_URL = "https://nui.netlify.com"

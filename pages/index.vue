@@ -9,7 +9,12 @@
         <img class="rotate" src="~static/svg/index-people-crane.svg" alt>
       </template>
     </Header>
-    <Box></Box>
+    <Box>
+      <h1 class="sections-title has-text-centered">Section Title</h1>
+      <h3
+        class="sections-subtitle has-text-centered"
+      >Proident commodo voluptate duis proident cupidatat sit esse commodo eu eu cupidatat. Velit sunt commodo mollit aliqua veniam ad reprehenderit fugiat eiusmod nostrud. Duis culpa dolore in ea. Sit ex occaecat incididunt laborum sit cupidatat laboris commodo do exercitation voluptate culpa ipsum. Enim aliqua pariatur aliquip fugiat Lorem elit esse tempor. Cillum id do eiusmod adipisicing nulla voluptate aute Lorem elit nulla. In non ex nulla laboris aliquip veniam voluptate amet qui dolor eu duis exercitation reprehenderit.</h3>
+    </Box>
     <TwoColumns>
       <template v-slot:left>
         <img class="rotate" src="~static/svg/index-people-rocket-informal.svg" alt>
@@ -32,6 +37,9 @@
         <img class="no-rotate" src="~static/svg/index-female-male-books.svg" alt>
       </template>
     </TwoColumns>
+    <Box>
+      <ContactUs></ContactUs>
+    </Box>
   </div>
 </template>
 
@@ -39,12 +47,14 @@
 import Header from "~/components/Header.vue"
 import Box from "~/components/index/Box.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
+import ContactUs from "~/components/ContactUs.vue"
 
 export default {
   components: {
     Header,
     Box,
-    TwoColumns
+    TwoColumns,
+    ContactUs
   }
 }
 </script>
