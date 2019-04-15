@@ -101,7 +101,7 @@ export default {
 @import "~/assets/css/angled-edges.scss";
 @import "~/assets/css/main.scss";
 
-#particles-js {
+#particles-js, .particles-js-canvas-el {
   background-color: $dark-blue;
   max-height: 200px;
 }
