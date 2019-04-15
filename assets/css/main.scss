@@ -112,8 +112,9 @@ $breakpoint-xl: 1500px;
     margin-left: 10% !important;
   }
   @media (min-width: $breakpoint-xl) {
-    margin-right: 15% !important;
-    margin-left: 15% !important;
+    max-width: 1300px;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 }
 

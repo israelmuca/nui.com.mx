@@ -19,6 +19,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+img {
+  transform: scaleX(-1);
+}
 </style>
+

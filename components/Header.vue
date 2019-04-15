@@ -38,8 +38,8 @@
       <div class="column is-6 header-column">
         <slot name="text"></slot>
       </div>
-      <div class="column is-1"></div>
-      <div class="column is-5">
+      <!-- <div class="column is-1"></div> -->
+      <div class="column is-6">
         <slot name="image"></slot>
       </div>
     </div>
