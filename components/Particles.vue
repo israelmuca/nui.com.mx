@@ -31,7 +31,7 @@ export default {}
   height: 200px;
 }
 
-.particles-js-canvas-el {
+#particles-js * {
   background-color: $dark-blue;
   height: 200px;
 }
