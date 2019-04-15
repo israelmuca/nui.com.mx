@@ -28,11 +28,11 @@ export default {}
 
 #particles-js {
   background-color: $dark-blue;
-  max-height: 200px;
+  height: 200px;
 }
 
-canvas {
+.particles-js-canvas-el {
   background-color: $dark-blue;
-  max-height: 200px;
+  height: 200px;
 }
 </style>
