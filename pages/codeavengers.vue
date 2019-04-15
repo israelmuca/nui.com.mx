@@ -5,7 +5,7 @@
       <p class="header-subtitle">Code Avengers es una empresa de la enseñanza del código y la programación enfocada...</p>
     </template>
     <template v-slot:image>
-      <img src="~static/svg/people-programming.svg" alt="">
+      <img class="no-rotate" src="~static/svg/ca-people-programming.svg" alt="">
     </template>
   </Header>
 </template>
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
+.no-rotate {
   transform: scaleX(1);
 }
 </style>

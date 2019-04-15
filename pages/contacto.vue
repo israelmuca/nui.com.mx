@@ -5,7 +5,7 @@
       <p class="header-subtitle">Cualquier duda que tengas estamos para ayudarte, desde implementación en tu colegio, hasta...</p>
     </template>
     <template v-slot:image>
-      <img src="~static/svg/people-home-office.svg" alt="">
+      <img class="no-rotate" src="~static/svg/contacto-people-home-office.svg" alt="">
     </template>
   </Header>
 </template>
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
+.no-rotate {
   transform: scaleX(1);
 }
 </style>
