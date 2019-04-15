@@ -1,10 +1,14 @@
 <template>
   <div>
-    <section class="hero is-medium">
+    <section class="hero is-medium header-nav">
       <div class="hero-head">
         <nav class="navbar">
           <div class="navbar-brand">
-            <nuxt-link class="navbar-item" to="#">
+            <nuxt-link
+              class="navbar-item"
+              to="/"
+              @click.native="(showNav) ? showNav = false : showNav = false"
+            >
               <img class="nui-logo" src="~static/svg/nui-logo.svg">
             </nuxt-link>
             <div
@@ -20,25 +24,44 @@
 
           <div class="navbar-menu" :class="{ 'is-active': showNav }">
             <div class="navbar-end">
-              <nuxt-link class="navbar-item nav-links is-clearfix" to="#">
-                <span class="is-pulled-right">Productos</span>
-              </nuxt-link>
-              <nuxt-link class="navbar-item nav-links is-clearfix" to="#">
+              <nuxt-link
+                class="navbar-item nav-links is-clearfix"
+                to="/"
+                @click.native="showNav = !showNav"
+                exact
+              >
                 <span class="is-pulled-right">Acerca de Nui</span>
               </nuxt-link>
-              <nuxt-link class="navbar-item nav-links is-clearfix" to="#">
+              <nuxt-link
+                class="navbar-item nav-links is-clearfix"
+                to="/codeavengers"
+                @click.native="showNav = !showNav"
+              >
+                <span class="is-pulled-right">Code Avengers</span>
+              </nuxt-link>
+              <nuxt-link
+                class="navbar-item nav-links is-clearfix"
+                to="#"
+                @click.native="showNav = !showNav"
+              >
                 <span class="is-pulled-right">Contacto</span>
               </nuxt-link>
             </div>
           </div>
         </nav>
       </div>
+      <div class="hero-body">
+        <div class="columns hero-content">
+          <div class="column is-6 header-column">
+            <slot name="text"></slot>
+          </div>
+        </div>
+      </div>
     </section>
     <div class="columns header-content">
       <div class="column is-6 header-column">
-        <slot name="text"></slot>
+        <!-- Remains empty to fix z-index bug -->
       </div>
-      <!-- <div class="column is-1"></div> -->
       <div class="column is-6">
         <slot name="image"></slot>
       </div>
@@ -61,7 +84,7 @@ export default {
 @import "~/assets/css/main.scss";
 
 .hero {
-  z-index: -1;
+  z-index: 0;
   height: 700px;
   background-color: $dark-blue;
   @include angle-edge(
@@ -99,14 +122,22 @@ export default {
   box-shadow: none;
 }
 
+.hero-body {
+  padding-left: 0px;
+}
+
+.hero-content {
+  @include main-width;
+}
+
 .header-content {
   @include main-width;
-  z-index: 1;
-  margin-top: -450px;
+  z-index: 100;
+  margin-top: -500px;
 }
 
 .header-column {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .header-title {
@@ -115,5 +146,11 @@ export default {
 
 .header-subtitle {
   @include header-subtitle;
+}
+
+@media (max-width: $breakpoint-sm) {
+  .header-content {
+    margin-top: -300px;
+  }
 }
 </style>

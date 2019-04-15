@@ -17,7 +17,7 @@ $white: #fafafa;
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 $breakpoint-xs: 360px;
-$breakpoint-sm: 767px;
+$breakpoint-sm: 768px;
 $breakpoint-md: 1023px;
 $breakpoint-lg: 1360px;
 $breakpoint-xl: 1500px;
@@ -40,7 +40,8 @@ $breakpoint-xl: 1500px;
 
   &:hover {
     background-color: transparent !important;
-    color: $white !important;
+    color: $black !important;
+    cursor: pointer;
   }
 }
 

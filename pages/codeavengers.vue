@@ -1,11 +1,11 @@
 <template>
   <Header>
     <template v-slot:text>
-      <h1 class="header-title">Esto es Nui</h1>
-      <p class="header-subtitle">Nui es una empresa de tecnologías educativas...</p>
+      <h1 class="header-title">Esto es Code Avengers</h1>
+      <p class="header-subtitle">Code Avengers es una empresa de la enseñanza del código y la programación enfocada...</p>
     </template>
     <template v-slot:image>
-      <img src="~static/svg/people-crane.svg" alt="">
+      <img src="~static/svg/people-programming.svg" alt="">
     </template>
   </Header>
 </template>
@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  transform: scaleX(-1);
+  transform: scaleX(1);
 }
 </style>
 
