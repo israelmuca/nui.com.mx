@@ -1,22 +1,5 @@
 <template>
   <div>
-    <vue-particles id="particles-js"
-      color="#fafafa"
-      :particleOpacity="0.5"
-      linesColor="#fafafa"
-      :particlesNumber="100"
-      shapeType="circle"
-      :particleSize="3"
-      :linesWidth="1"
-      :lineLinked="true"
-      :lineOpacity="0.2"
-      :linesDistance="200"
-      :moveSpeed="1"
-      :hoverEffect="true"
-      hoverMode="grab"
-      :clickEffect="true"
-      clickMode="push"
-    ></vue-particles>
     <section class="hero is-medium header-nav">
       <div class="hero-head">
         <nav class="navbar">
@@ -58,7 +41,7 @@
               </nuxt-link>
               <nuxt-link
                 class="navbar-item nav-links is-clearfix"
-                to="#"
+                to="/contacto"
                 @click.native="showNav = !showNav"
               >
                 <span class="is-pulled-right">Contacto</span>
@@ -88,7 +71,6 @@
 
 <script>
 export default {
-  components: {},
   data() {
     return {
       showNav: false
@@ -101,11 +83,7 @@ export default {
 @import "~/assets/css/angled-edges.scss";
 @import "~/assets/css/main.scss";
 
-#particles-js, .particles-js-canvas-el {
-  background-color: $dark-blue;
-  max-height: 200px;
-}
-
+// Give the whole hero a max height, apply the angle and set the z-index to apply content on top
 .hero {
   z-index: 0;
   height: 700px;
@@ -117,10 +95,8 @@ export default {
   );
 }
 
-/* .hero-head {
-  margin-top: -750px;
-} */
 
+// Set the Navbar CSS
 .nui-logo {
   height: 100px;
   max-height: 200px !important;
@@ -148,6 +124,8 @@ export default {
   box-shadow: none;
 }
 
+
+// Make sure the content is at the edge of the left and right and properly set on the height
 .hero-body {
   padding-left: 0px;
 }
@@ -160,12 +138,15 @@ export default {
   @include main-width;
   z-index: 100;
   margin-top: -500px;
+  padding-right: 0px;
 }
 
 .header-column {
   margin-top: 50px;
 }
 
+
+// Set the font options for the title and subtitle
 .header-title {
   @include header-title;
 }
@@ -174,6 +155,8 @@ export default {
   @include header-subtitle;
 }
 
+
+// Media query for when the columns are stacked on top of each other
 @media (max-width: $breakpoint-sm) {
   .header-content {
     margin-top: -300px;
