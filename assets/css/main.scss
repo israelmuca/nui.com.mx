@@ -82,6 +82,19 @@ $breakpoint-xl: 1500px;
 
 @mixin sections-subtitle {
   font-family: "OpenSans", sans-serif;
+  font-size: 21px;
+  color: $black;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+
+  text-transform: none;
+
+  margin-top: 10px;
+}
+
+@mixin sections-content {
+  font-family: "OpenSans", sans-serif;
   font-size: 16px;
   color: $black;
   font-weight: 400;
@@ -95,27 +108,54 @@ $breakpoint-xl: 1500px;
 ** Define container size per breakpoint
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
-@mixin main-width {
-  @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
-    margin-right: 1% !important;
-    margin-left: 1% !important;
-  }
-  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
-    margin-right: 3% !important;
-    margin-left: 3% !important;
-  }
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
-    margin-right: 5% !important;
-    margin-left: 5% !important;
-  }
-  @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl){
-    margin-right: 10% !important;
-    margin-left: 10% !important;
-  }
-  @media (min-width: $breakpoint-xl) {
-    max-width: 1300px;
-    margin-right: auto !important;
-    margin-left: auto !important;
+@mixin main-width($size) {
+  @if $size == "small" {
+
+    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+      margin-right: 3% !important;
+      margin-left: 3% !important;
+    }
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      margin-right: 7.5% !important;
+      margin-left: 7.5% !important;
+    }
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      margin-right: 10% !important;
+      margin-left: 10% !important;
+    }
+    @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
+      margin-right: 20% !important;
+      margin-left: 20% !important;
+    }
+    @media (min-width: $breakpoint-xl) {
+      max-width: 1000px;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+
+  } @else if $size == 'normal' {
+
+    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+      margin-right: 1% !important;
+      margin-left: 1% !important;
+    }
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      margin-right: 3% !important;
+      margin-left: 3% !important;
+    }
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      margin-right: 5% !important;
+      margin-left: 5% !important;
+    }
+    @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
+      margin-right: 10% !important;
+      margin-left: 10% !important;
+    }
+    @media (min-width: $breakpoint-xl) {
+      max-width: 1300px;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
   }
 }
 

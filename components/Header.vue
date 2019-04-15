@@ -95,7 +95,6 @@ export default {
   );
 }
 
-
 // Set the Navbar CSS
 .nui-logo {
   height: 100px;
@@ -104,7 +103,7 @@ export default {
 }
 
 .navbar {
-  @include main-width;
+  @include main-width('normal');
 }
 
 .nav-links {
@@ -124,27 +123,26 @@ export default {
   box-shadow: none;
 }
 
-
 // Make sure the content is at the edge of the left and right and properly set on the height
 .hero-body {
   padding-left: 0px;
 }
 
 .hero-content {
-  @include main-width;
+  @include main-width('normal');
 }
 
 .header-content {
-  @include main-width;
+  @include main-width('normal');
   z-index: 100;
   margin-top: -500px;
   padding-right: 0px;
+  margin-bottom: 50px !important;
 }
 
 .header-column {
   margin-top: 50px;
 }
-
 
 // Set the font options for the title and subtitle
 .header-title {
@@ -155,11 +153,16 @@ export default {
   @include header-subtitle;
 }
 
-
 // Media query for when the columns are stacked on top of each other
 @media (max-width: $breakpoint-sm) {
   .header-content {
     margin-top: -300px;
+  }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+  .header-content {
+    margin-bottom: 150px !important;
   }
 }
 </style>
