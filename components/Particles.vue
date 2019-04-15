@@ -1,22 +1,24 @@
 <template>
-  <vue-particles
-    id="particles-js"
-    color="#fafafa"
-    :particleOpacity="0.5"
-    linesColor="#fafafa"
-    :particlesNumber="100"
-    shapeType="circle"
-    :particleSize="3"
-    :linesWidth="1"
-    :lineLinked="true"
-    :lineOpacity="0.2"
-    :linesDistance="200"
-    :moveSpeed="1"
-    :hoverEffect="true"
-    hoverMode="grab"
-    :clickEffect="true"
-    clickMode="push"
-  ></vue-particles>
+  <no-ssr>
+    <vue-particles
+      id="particles-js"
+      color="#fafafa"
+      :particleOpacity="0.5"
+      linesColor="#fafafa"
+      :particlesNumber="100"
+      shapeType="circle"
+      :particleSize="3"
+      :linesWidth="1"
+      :lineLinked="true"
+      :lineOpacity="0.2"
+      :linesDistance="200"
+      :moveSpeed="1"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      clickMode="push"
+    ></vue-particles>
+  </no-ssr>
 </template>
 
 <script>
