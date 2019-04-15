@@ -1,8 +1,16 @@
 <template>
-  <nuxt/>
+  <div>
+    <Particles></Particles>
+    <nuxt/>
+  </div>
 </template>
 
 <script>
-export default {}
+import Particles from "~/components/Particles.vue"
+export default {
+  components: {
+    Particles
+  }
+}
 </script>
 
