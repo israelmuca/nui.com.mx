@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vue-particles
+    <vue-particles id="particles-js"
       color="#fafafa"
       :particleOpacity="0.5"
       linesColor="#fafafa"
