@@ -1,5 +1,5 @@
 /*
-** Define colors to be used
+** Define colors
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 $black: #000020;
@@ -13,7 +13,17 @@ $light-grey: #4a4a4a;
 $white: #fafafa;
 
 /*
-** Define fonts to be used
+** Define breakpoints
+** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+$breakpoint-xl: 1500px;
+
+/*
+** Define fonts
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700,900");
@@ -21,18 +31,23 @@ $white: #fafafa;
 @mixin nav-links {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-color: $white;
+  color: $white;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 2px;
 
   text-transform: uppercase;
+
+  &:hover {
+    background-color: transparent !important;
+    color: $white !important;
+  }
 }
 
 @mixin header-title {
   font-family: "Poppins", sans-serif;
   font-size: 49px;
-  font-color: $white;
+  color: $white;
   font-weight: 900;
   line-height: 49px;
   letter-spacing: 1px;
@@ -49,6 +64,8 @@ $white: #fafafa;
   letter-spacing: 0.5px;
 
   text-transform: none;
+
+  margin-top: 15px;
 }
 
 @mixin sections-title {
@@ -73,9 +90,49 @@ $white: #fafafa;
   text-transform: none;
 }
 
+/*
+** Define container size per breakpoint
+** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+@mixin main-width {
+  @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+    margin-right: 1% !important;
+    margin-left: 1% !important;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    margin-right: 3% !important;
+    margin-left: 3% !important;
+  }
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    margin-right: 5% !important;
+    margin-left: 5% !important;
+  }
+  @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl){
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin-right: 15% !important;
+    margin-left: 15% !important;
+  }
+}
 
 /*
 ** Import bulma .sass files to be used
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
-@import "~~bulma/bulma.sass";
+
+// General variables
+@import "~~bulma/sass/utilities/_all.sass";
+
+// General Reset
+@import "~~bulma/sass/base/_all.sass";
+
+// Header
+@import "~~bulma/sass/layout/hero.sass";
+
+// Navbar
+@import "~~bulma/sass/components/navbar.sass";
+
+// Columns
+@import "~~bulma/sass/grid/columns.sass";

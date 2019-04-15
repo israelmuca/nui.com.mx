@@ -1,15 +1,20 @@
 <template>
-  <section class="container">
-    <logo/>
-  </section>
+  <Header>
+    <template v-slot:text>
+      <h1 class="header-title">Here might be a page title</h1>
+      <p class="header-subtitle">Here might be a page subtitle with double the amount of text</p>
+    </template>
+    <template v-slot:image>
+      <img src="~static/svg/people-crane.svg" alt="">
+    </template>
+  </Header>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue"
-
+import Header from "~/components/Header.vue"
 export default {
   components: {
-    Logo
+    Header
   }
 }
 </script>
