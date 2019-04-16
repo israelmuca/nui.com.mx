@@ -16,23 +16,23 @@
           </slide>
           <slide class="slide-2">
             <div class="image-slide">
-              <h1 class="cc-slide-title">Planning</h1>
-              <h3 class="cc-slide-subtitle">Easy to follow custom lesson plans</h3>
+              <h1 class="cc-slide-title">Teaching</h1>
+              <h3 class="cc-slide-subtitle">Ready-made activities</h3>
               <ul>
-                <li class="cc-slide-content">Flexible lesson plans</li>
-                <li class="cc-slide-content">Resources to train and up-skill teachers</li>
-                <li class="cc-slide-content">Personalized consultations available</li>
+                <li class="cc-slide-content">Teacher training</li>
+                <li class="cc-slide-content">Lesson plans</li>
+                <li class="cc-slide-content">Online assistance</li>
               </ul>
             </div>
           </slide>
           <slide class="slide-3">
             <div class="image-slide">
-              <h1 class="cc-slide-title">Planning</h1>
+              <h1 class="cc-slide-title">Assessing</h1>
               <h3 class="cc-slide-subtitle">Easy to follow custom lesson plans</h3>
               <ul>
-                <li class="cc-slide-content">Flexible lesson plans</li>
-                <li class="cc-slide-content">Resources to train and up-skill teachers</li>
-                <li class="cc-slide-content">Personalized consultations available</li>
+                <li class="cc-slide-content">See students' work in realtime</li>
+                <li class="cc-slide-content">Auto marking exams</li>
+                <li class="cc-slide-content">Download lesson reports</li>
               </ul>
             </div>
           </slide>
