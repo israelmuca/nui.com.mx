@@ -2,10 +2,11 @@
   <div>
     <Header>
       <template v-slot:text>
-        <h1 class="header-title">Code Avengers</h1>
+        <h1 class="header-title">Innovación Tecnológica</h1>
         <p
           class="header-subtitle"
-        >La informática abre más puertas que cualquier otra disciplina. Hoy el 71% de todos los trabajos en los Estados Unidos requieren habilidades digitales, siendo estas las mejor pagadas. Aprender desde los conceptos básicos, ayudará a los estudiantes en cualquier carrera o profesión que elijan para su futuro.</p>
+        >La informática abre más puertas que cualquier otra disciplina. Hoy el 71% de todos los trabajos en los Estados Unidos requieren habilidades digitales, siendo estas las mejor pagadas. Aprender desde los conceptos básicos, ayudará a los estudiantes en cualquier carrera o profesión que elijan para su futuro.
+        <br>La innovacion tecnologica permite enfrentar los retos del futuro de mejor manera. Maximizando los recursos financieros, humanos y de infraestructura permitiendo a las organizaciones ascender a las mejores posiciones de su sector.</p>
       </template>
       <template v-slot:image>
         <img class="no-rotate" src="~static/svg/ca-people-programming.svg" alt>
@@ -33,11 +34,8 @@
       </template>
     </TwoColumns>
     <WideImage>
-      <h1 class="image-title">
-        <!-- “Our mission is to make teaming fun, engaging & prepare your students for the opportunities of tomorrow" -->
-        Nui + Code Avengers
-        <br>Nuestro equipo está compuesto de académicos, profesores, desarrolladores de software y expertos en usabilidad de plataformas web, así como profesionales de atención y servicio al cliente.
-      </h1>
+      <p class="wide-image-content"><span class="image-title">Nui + Code Avengers</span>
+      <br><span class="image-subtitle">Nuestro equipo está compuesto de académicos e investigadores, desarrolladores de software, así como profesionales de servicio y atención al cliente.</span></p>
     </WideImage>
     <TwoColumns>
       <template v-slot:left>

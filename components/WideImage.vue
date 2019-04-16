@@ -22,18 +22,25 @@ export default {
 
 .image-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("~~static/images/girl-teacher.jpeg");
+    url("~~static/images/CodeAvengers.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 500px;
   width: auto;
 
   display: flex;
   align-items: center;
 }
 
+.wide-image-content {
+@include main-width("small");
+}
+
 .image-title {
   @include image-title;
-  @include main-width("small");
+}
+
+.image-subtitle {
+  @include image-subtitle;
 }
 </style>
