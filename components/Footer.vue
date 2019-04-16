@@ -11,10 +11,12 @@
       <div class="level-right">
         <div class="level-item">
           <p class="footer-content">
-            Av. Ricardo Margain Zozaya 575
-            <br>SPGG, N.L.
-            <br>C.P. 66273, México
-            <br><br>81 8333 3333
+            Ricardo Margain 575
+            <br>Edificio C Int. 100
+            <br>Col. Santa Engracia
+            <br>S.P.G.G., N.L.
+            <br>C.P. 66267
+            <br><br>01 (+81) 8000 7159
             <br><br>contacto@nui.com.mx
           </p>
         </div>
@@ -31,7 +33,7 @@ export default {}
 @import "~/assets/css/main.scss";
 
 .footer {
-  background-color: $blue;
+  background-color: $dark-blue;
   padding: 60px 0px;
   margin-top: 30px;
 }

@@ -122,7 +122,7 @@ export default {
 
 .button {
   @include sections-content;
-  background-color: $blue;
+  background-color: $dark-blue;
   color: $white;
   width: 150px;
 

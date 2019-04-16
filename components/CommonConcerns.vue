@@ -13,19 +13,19 @@
           <div class="column is-12 has-text-centered">
               <h1 class="cc-title">Planning</h1>
           </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/11planning.svg" alt>
           <p class="cc-subtitle">
               flexible lesson plans
           </p>
         </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/12planning.svg" alt>
           <p class="cc-subtitle">
               training resources
           </p>
         </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/13planning.svg" alt>
           <p class="cc-subtitle">
               personal consultations
@@ -42,19 +42,19 @@
           <div class="column is-12 has-text-centered">
               <h1 class="cc-title">Teaching</h1>
           </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/21teaching.svg" alt>
           <p class="cc-subtitle">
-              curriculum aligned courses
+              aligned courses
           </p>
         </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/22teaching.svg" alt>
           <p class="cc-subtitle">
-              activities
+              premade activities
           </p>
         </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/23teaching.svg" alt>
           <p class="cc-subtitle">
               cross curricular activities
@@ -71,19 +71,19 @@
           <div class="column is-12 has-text-centered">
               <h1 class="cc-title">Assessing</h1>
           </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/31assessing.svg" alt>
           <p class="cc-subtitle">
               real-time feedback
           </p>
         </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/32assessing.svg" alt>
           <p class="cc-subtitle">
               student tracking
           </p>
         </div>
-        <div class="column is-4 has-text-centered">
+        <div class="column is-5 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/33assessing.svg" alt>
           <p class="cc-subtitle">
               auto-marking
