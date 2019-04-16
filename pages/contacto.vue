@@ -11,6 +11,7 @@
         <img class="no-rotate" src="~static/svg/contacto-people-home-office.svg" alt>
       </template>
     </Header>
+    <ContactInfo></ContactInfo>
     <TwoColumns>
       <template v-slot:left>
         <img class="no-rotate" src="~static/svg/contacto-people-rating.svg" alt>
@@ -30,6 +31,7 @@
 
 <script>
 import Header from "~/components/Header.vue"
+import ContactInfo from "~/components/ContactInfo.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 import Box from "~/components/Box.vue"
 import ContactForm from "~/components/ContactForm.vue"
@@ -37,6 +39,7 @@ import ContactForm from "~/components/ContactForm.vue"
 export default {
   components: {
     Header,
+    ContactInfo,
     TwoColumns,
     Box,
     ContactForm
