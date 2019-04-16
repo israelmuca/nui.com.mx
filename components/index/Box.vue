@@ -24,6 +24,12 @@ export default {}
   padding: 40px 80px;
 }
 
+@media (max-width: $breakpoint-sm) {
+  .box {
+    padding: 20px 25px;
+  }
+}
+
 .sections-title {
   @include sections-title;
 }

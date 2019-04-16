@@ -101,9 +101,15 @@ export default {
   max-height: 200px !important;
   width: auto;
 }
+@media (max-width: $breakpoint-sm) {
+  .nui-logo {
+    height: 75px;
+    width: auto;
+  }
+}
 
 .navbar {
-  @include main-width('normal');
+  @include main-width("normal");
 }
 
 .nav-links {
@@ -117,6 +123,11 @@ export default {
     background-color: transparent;
   }
 }
+@media (max-width: $breakpoint-sm) {
+  .navbar-burger {
+  margin-top: 18px;
+}
+}
 
 .is-active {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -129,11 +140,11 @@ export default {
 }
 
 .hero-content {
-  @include main-width('normal');
+  @include main-width("normal");
 }
 
 .header-content {
-  @include main-width('normal');
+  @include main-width("normal");
   z-index: 100;
   margin-top: -500px;
   padding-right: 0px;

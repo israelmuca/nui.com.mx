@@ -37,4 +37,16 @@ export default {}
   background-color: $dark-blue;
   height: 200px;
 }
+
+@media (max-width: $breakpoint-sm) {
+  #particles-js {
+    background-color: $dark-blue;
+    height: 100px;
+  }
+
+  #particles-js * {
+    background-color: $dark-blue;
+    height: 100px;
+  }
+}
 </style>
