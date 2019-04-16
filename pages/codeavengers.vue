@@ -13,13 +13,16 @@
     </Header>
     <TwoColumns>
       <template v-slot:left>
-        <img class="rotate" src="~static/svg/ca-people-hands-phone.svg" alt>
+        <img class="rotate" src="~static/logos/CA-Logo_Black.png" alt>
       </template>
       <template v-slot:right>
-        <h1 class="title">Quién es Code Avengers?</h1>
+        <!-- <h1 class="title">Quién es Code Avengers?</h1> -->
         <p
-          class="content"
-        >Una empresa de tecnología de Nueva Zelanda que está construyendo el futuro de la educación digital del código y la programación.</p>
+          class="content has-text-justified"
+        >Plataforma educativa originaria de Nueva Zelanda, cuenta con tecnología basada en la nube y se enfoca en la enseñanza de las Ciencias de la Computación y el Código.
+        Creada en el 2012 por Michael Walsmley, Ph.D; Code Avengers está diseñada para ser el principal apoyo para el profesor para su clases frente al grupo, pero también puede ser usada de forma individual para el autoaprendizaje.
+        <br><br>Al dia de hoy más de 15 mil instituciones en el mundo han incorporado a Code Avengers como un aliado en su proceso de enseñanza. 
+        La plataforma contempla un programa académico de vanguardia global, con la oferta más amplia de contenidos, el cual se adapta a cada institución y a sus objetivos particulares.  </p>
       </template>
     </TwoColumns>
     <WideImage>
@@ -74,6 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .no-rotate {
   transform: scaleX(1);
 }

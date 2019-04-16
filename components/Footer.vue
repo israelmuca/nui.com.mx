@@ -4,7 +4,7 @@
       <div class="level-left">
         <div class="level-item">
           <nuxt-link to="/">
-            <img class="nui-logo" src="~static/svg/nui-logo.svg">
+            <img class="nui-logo" src="~static/logos/nui-logo.svg">
           </nuxt-link>
         </div>
       </div>

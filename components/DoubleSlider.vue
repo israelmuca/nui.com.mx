@@ -5,34 +5,34 @@
         <hooper :settings="hooperSettings" sync="hooper2">
           <slide class="slide-1">
             <div class="image-slide">
-              <h1 class="cc-slide-title">Planning</h1>
-              <h3 class="cc-slide-subtitle">Easy to follow custom lesson plans</h3>
+              <h1 class="cc-slide-title">Planeación</h1>
+              <h3 class="cc-slide-subtitle">Planes de lección desarrollados y fáciles de seguir</h3>
               <ul>
-                <li class="cc-slide-content">Flexible lesson plans</li>
-                <li class="cc-slide-content">Resources to train and up-skill teachers</li>
-                <li class="cc-slide-content">Personalized consultations available</li>
+                <li class="cc-slide-content">Planes de lección flexibles</li>
+                <li class="cc-slide-content">Capacitación para los maestros</li>
+                <li class="cc-slide-content">Consultas personalizadas</li>
               </ul>
             </div>
           </slide>
           <slide class="slide-2">
             <div class="image-slide">
-              <h1 class="cc-slide-title">Teaching</h1>
-              <h3 class="cc-slide-subtitle">Ready-made activities</h3>
+              <h1 class="cc-slide-title">Enseñanza</h1>
+              <h3 class="cc-slide-subtitle">Actividades enfocadas a proyectos multidisciplinarios</h3>
               <ul>
-                <li class="cc-slide-content">Teacher training</li>
-                <li class="cc-slide-content">Lesson plans</li>
-                <li class="cc-slide-content">Online assistance</li>
+                <li class="cc-slide-content">Cursos alineados a programas oficiales internacionales</li>
+                <li class="cc-slide-content">Proyectos basados en competencias</li>
+                <li class="cc-slide-content">Multidisciplinar con enfoque transversal</li>
               </ul>
             </div>
           </slide>
           <slide class="slide-3">
             <div class="image-slide">
-              <h1 class="cc-slide-title">Assessing</h1>
-              <h3 class="cc-slide-subtitle">Easy to follow custom lesson plans</h3>
+              <h1 class="cc-slide-title">Evaluación</h1>
+              <h3 class="cc-slide-subtitle">Sistemas automatizados de evaluación</h3>
               <ul>
-                <li class="cc-slide-content">See students' work in realtime</li>
-                <li class="cc-slide-content">Auto marking exams</li>
-                <li class="cc-slide-content">Download lesson reports</li>
+                <li class="cc-slide-content">Retroalimentación en tiempo real</li>
+                <li class="cc-slide-content">Seguimiento al trabajo del estudiante</li>
+                <li class="cc-slide-content">Visibilidad por grupo o estudiante</li>
               </ul>
             </div>
           </slide>

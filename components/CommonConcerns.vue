@@ -1,34 +1,34 @@
 <template>
   <section class="columns is-multiline is-centered is-vcentered common-concerns-section">
     <div class="column is-12">
-      <h1 class="sections-title has-text-centered">Common Concerns</h1>
+      <h1 class="sections-title has-text-centered">Solución Integral</h1>
       <p
         class="sections-content"
-      >Ullamco amet dolore ut dolore eu magna anim excepteur. Elit non sit deserunt mollit magna. Laborum fugiat et fugiat eu Lorem consequat culpa dolore aliquip in occaecat. Minim laboris culpa est aliquip et elit reprehenderit culpa reprehenderit id in. Sunt anim consectetur magna amet aute dolore qui ea non ullamco laborum elit occaecat. Amet veniam duis nostrud dolor reprehenderit cillum adipisicing.</p>
+      >La enseñanza de ciencias de la computación y código traen consigo una serie de retos a superar, Code Avengers se desarrolló como una solución integral para las instituciones.</p>
     </div>
     <!-- Ilustration Code -->
     <div class="column is-3 has-text-centered cc-ilustration">
       <img class="no-rotate" src="~static/svg/common-concerns/10planning.svg" alt>
       <div class="columns is-mobile is-multiline is-centered">
           <div class="column is-12 has-text-centered">
-              <h1 class="cc-title">Planning</h1>
+              <h1 class="cc-title">Planeación</h1>
           </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/11planning.svg" alt>
-          <p class="cc-subtitle">
-              flexible lesson plans
+          <p class="cc-subtitle has-text-centered">
+              lecciones flexibles
           </p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/12planning.svg" alt>
-          <p class="cc-subtitle">
-              training resources
+          <p class="cc-subtitle has-text-centered">
+              capacitación constante
           </p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/13planning.svg" alt>
-          <p class="cc-subtitle">
-              personal consultations
+          <p class="cc-subtitle has-text-centered">
+              soporte permanente
           </p>
         </div>
       </div>
@@ -40,24 +40,24 @@
       <img class="no-rotate" src="~static/svg/common-concerns/20teaching.svg" alt>
       <div class="columns is-mobile is-multiline is-centered">
           <div class="column is-12 has-text-centered">
-              <h1 class="cc-title">Teaching</h1>
+              <h1 class="cc-title">Enseñanza</h1>
           </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/21teaching.svg" alt>
-          <p class="cc-subtitle">
-              aligned courses
+          <p class="cc-subtitle has-text-centered">
+              currícula oficial
           </p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/22teaching.svg" alt>
-          <p class="cc-subtitle">
-              premade activities
+          <p class="cc-subtitle has-text-centered">
+              proyectos interactivos 
           </p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/23teaching.svg" alt>
-          <p class="cc-subtitle">
-              cross curricular activities
+          <p class="cc-subtitle has-text-centered">
+              enfoque multidisciplinar
           </p>
         </div>
       </div>
@@ -69,24 +69,24 @@
       <img class="no-rotate" src="~static/svg/common-concerns/30assessing.svg" alt>
       <div class="columns is-mobile is-multiline is-centered">
           <div class="column is-12 has-text-centered">
-              <h1 class="cc-title">Assessing</h1>
+              <h1 class="cc-title">Evaluación</h1>
           </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/31assessing.svg" alt>
-          <p class="cc-subtitle">
-              real-time feedback
+          <p class="cc-subtitle has-text-centered">
+              visibilidad grupal
           </p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/32assessing.svg" alt>
-          <p class="cc-subtitle">
-              student tracking
+          <p class="cc-subtitle has-text-centered">
+              enfoque personalizado
           </p>
         </div>
-        <div class="column is-5 has-text-centered">
+        <div class="column is-6 has-text-centered">
           <img class="no-rotate" src="~static/svg/common-concerns/33assessing.svg" alt>
-          <p class="cc-subtitle">
-              auto-marking
+          <p class="cc-subtitle has-text-centered">
+              autoevaluación
           </p>
         </div>
       </div>
@@ -113,6 +113,7 @@ export default {}
 
 .sections-content {
   @include sections-content;
+  @include main-width("small");
   margin-top: 20px;
 }
 

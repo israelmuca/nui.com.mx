@@ -9,7 +9,7 @@
               to="/"
               @click.native="(showNav) ? showNav = false : showNav = false"
             >
-              <img class="nui-logo" src="~static/svg/nui-logo.svg">
+              <img class="nui-logo" src="~static/logos/nui-logo.svg">
             </nuxt-link>
             <div
               class="navbar-burger burguer"
