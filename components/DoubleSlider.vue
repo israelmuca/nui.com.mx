@@ -119,10 +119,10 @@ export default {
 }
 
 .hooper-indicator {
-  width: 60px;
-  border-radius: 0px;
+  width: 60px !important;
+  border-radius: 0px !important;
   margin-bottom: 20px !important;
-  background-color: $light-grey;
+  background-color: $light-grey !important;
 }
 
 .hooper-pagination {
