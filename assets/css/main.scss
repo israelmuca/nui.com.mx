@@ -55,6 +55,18 @@ $breakpoint-xl: 1500px;
   letter-spacing: 1px;
 
   text-transform: uppercase;
+
+  & {
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 39px;
+      line-height: 49px;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+      font-size: 36px;
+      line-height: 46px;
+    }
+  }
 }
 
 @mixin header-subtitle {
@@ -193,9 +205,13 @@ $breakpoint-xl: 1500px;
 */
 @mixin main-width($size) {
   @if $size == "small" {
-    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+    @media (max-width: $breakpoint-xs) {
       margin-right: 3% !important;
       margin-left: 3% !important;
+    }
+    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+      margin-right: 5% !important;
+      margin-left: 5% !important;
     }
     @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
       margin-right: 7.5% !important;
@@ -215,9 +231,13 @@ $breakpoint-xl: 1500px;
       margin-left: auto !important;
     }
   } @else if $size == "normal" {
-    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+    @media (max-width: $breakpoint-xs) {
       margin-right: 1% !important;
       margin-left: 1% !important;
+    }
+    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+      margin-right: 2% !important;
+      margin-left: 2% !important;
     }
     @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
       margin-right: 3% !important;

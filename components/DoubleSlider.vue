@@ -1,6 +1,6 @@
 <template>
   <section class="hooper-section">
-    <div class="columns">
+    <div class="columns double-hooper">
       <div class="column is-6">
         <hooper :settings="hooperSettings" sync="hooper2">
           <slide class="slide-1">
@@ -89,6 +89,11 @@ export default {
 
 <style lang="scss">
 @import "~/assets/css/main.scss";
+
+.double-hooper {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
 .hooper-section {
   margin-top: 100px;

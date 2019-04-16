@@ -3,7 +3,7 @@
     <Header>
       <template v-slot:text>
         <h1 class="header-title">Esto es Nui</h1>
-        <p class="header-subtitle">Nui es una empresa de tecnologías educativas...</p>
+        <p class="header-subtitle">Nui Tecnologías Educativas es una empresa mexicana, con origen en la Ciudad de México y ahora con una nueva sede en la Ciudad de Monterrey, dedicada al desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo. Nuestro objetivo es apoyar a las instituciones educativas en México en la adopción de soluciones tecnológicas de vanguardia, que abonen y aporten valor al sector.</p>
       </template>
       <template v-slot:image>
         <img class="rotate" src="~static/svg/index-people-crane.svg" alt>

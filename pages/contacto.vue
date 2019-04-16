@@ -2,10 +2,11 @@
   <div>
     <Header>
       <template v-slot:text>
-        <h1 class="header-title">Esto es Nui</h1>
+        <h1 class="header-title">Nuestro servicio</h1>
         <p
           class="header-subtitle"
-        >Cualquier duda que tengas estamos para ayudarte, desde implementación en tu colegio, hasta...</p>
+        >Desde escuelas en crecimiento hasta organizaciones internacionales se pueden ver beneficiados a través de la innovación tecnológica.
+        <br>Permítenos ayudarte en este proceso.</p>
       </template>
       <template v-slot:image>
         <img class="no-rotate" src="~static/svg/contacto-people-home-office.svg" alt>

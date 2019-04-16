@@ -3,7 +3,7 @@
     <div class="column is-12">
       <h1 class="sections-title has-text-centered">Solución Integral</h1>
       <p
-        class="sections-content"
+        class="sections-content has-text-justified"
       >La enseñanza de ciencias de la computación y código traen consigo una serie de retos a superar, Code Avengers se desarrolló como una solución integral para las instituciones.</p>
     </div>
     <!-- Ilustration Code -->

@@ -62,7 +62,7 @@
       <div class="column is-6 header-column">
         <!-- Remains empty to fix z-index bug -->
       </div>
-      <div class="column is-6">
+      <div class="column is-6 image-column">
         <slot name="image"></slot>
       </div>
     </div>
@@ -86,7 +86,7 @@ export default {
 // Give the whole hero a max height, apply the angle and set the z-index to apply content on top
 .hero {
   z-index: 0;
-  height: 700px;
+  height: 800px;
   background-color: $dark-blue;
   @include angle-edge(
     $angle: 4,
@@ -125,8 +125,8 @@ export default {
 }
 @media (max-width: $breakpoint-sm) {
   .navbar-burger {
-  margin-top: 18px;
-}
+    margin-top: 18px;
+  }
 }
 
 .is-active {
@@ -135,14 +135,15 @@ export default {
 }
 
 .nuxt-link-active {
-    background-color: transparent !important;
-    color: $black !important;
-    cursor: pointer;
-  }
+  background-color: transparent !important;
+  color: $black !important;
+  cursor: pointer;
+}
 
 // Make sure the content is at the edge of the left and right and properly set on the height
 .hero-body {
   padding-left: 0px;
+  padding-right: 0px;
 }
 
 .hero-content {
@@ -168,6 +169,20 @@ export default {
 
 .header-subtitle {
   @include header-subtitle;
+}
+
+.image-column {
+  & {
+    @media (max-width: 450px) {
+      margin-top: 130px;
+    }
+    @media (min-width: 450px) and (max-width: 600px) {
+      margin-top: 80px;
+    }
+    @media (min-width: 600px) and (max-width: $breakpoint-sm) {
+      margin-top: 0px;
+    }
+  }
 }
 
 // Media query for when the columns are stacked on top of each other

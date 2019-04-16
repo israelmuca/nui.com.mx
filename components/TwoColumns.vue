@@ -3,7 +3,7 @@
     <div class="column is-5">
       <slot name="left"></slot>
     </div>
-    <div class="column is-1"></div>
+    <div class="column is-1 mobile-dissapear"></div>
     <div class="column is-6">
       <slot name="right"></slot>
     </div>
@@ -31,16 +31,28 @@ export default {}
 }
 
 .rotate,
-  .no-rotate {
-    max-height: 500px;
-    width: auto;
-  }
+.no-rotate {
+  max-height: 500px;
+  width: auto;
+}
 
 @media (max-width: $breakpoint-sm) {
   .rotate,
   .no-rotate {
     max-height: 400px;
     width: auto;
+  }
+
+  .mobile-dissapear {
+    display: none;
+  }
+
+  .mobile-negative-top-margin {
+    margin-top: -85px;
+  }
+
+  .mobile-positive-top-margin {
+    margin-top: 75px;
   }
 }
 </style>

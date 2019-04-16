@@ -21,8 +21,7 @@
         </div>
       </template>
       <template v-slot:right>
-        <!-- <h1 class="title">Quién es Code Avengers?</h1> -->
-        <p class="content has-text-justified">
+        <p class="content has-text-justified mobile-negative-top-margin">
           Originaria de Nueva Zelanda, cuenta con tecnología basada en la nube y se enfoca en la enseñanza de las Ciencias de la Computación y el Código.
           Creada en el 2012 por Michael Walsmley, Ph.D; Está diseñada para ser el principal apoyo para el profesor para su clases frente al grupo, pero también puede ser usada de forma individual para el autoaprendizaje.
           <br>
@@ -32,7 +31,7 @@
     </TwoColumns>
     <TwoColumns>
       <template v-slot:left>
-        <h1 class="title">
+        <h1 class="title mobile-positive-top-margin">
           Éxito global
         </h1>
         <p class="content has-text-justified">
