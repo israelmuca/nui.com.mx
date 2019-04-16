@@ -170,6 +170,12 @@ $breakpoint-xl: 1500px;
 // General Reset
 @import "~~bulma/sass/base/_all.sass";
 
+// Forms
+@import "~~bulma/sass/elements/form.sass";
+
+// Buttons
+@import "~~bulma/sass/elements/button.sass";
+
 // Header
 @import "~~bulma/sass/layout/hero.sass";
 
