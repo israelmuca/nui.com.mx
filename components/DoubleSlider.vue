@@ -124,6 +124,10 @@ export default {
   margin-bottom: 20px !important;
   background-color: $light-grey !important;
 }
+.hooper-indicator.is-active,
+.hooper-indicator:hover {
+  background-color: $blue !important;
+}
 
 .hooper-pagination {
   @include sections-subtitle;
