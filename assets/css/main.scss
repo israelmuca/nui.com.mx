@@ -104,13 +104,21 @@ $breakpoint-xl: 1500px;
   text-transform: none;
 }
 
+@mixin image-title {
+  font-family: "OpenSans", sans-serif;
+  font-size: 36px;
+  color: $white;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 1px;
+}
+
 /*
 ** Define container size per breakpoint
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 @mixin main-width($size) {
   @if $size == "small" {
-
     @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
       margin-right: 3% !important;
       margin-left: 3% !important;
@@ -132,9 +140,7 @@ $breakpoint-xl: 1500px;
       margin-right: auto !important;
       margin-left: auto !important;
     }
-
-  } @else if $size == 'normal' {
-
+  } @else if $size == "normal" {
     @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
       margin-right: 1% !important;
       margin-left: 1% !important;

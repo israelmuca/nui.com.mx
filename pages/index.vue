@@ -45,7 +45,7 @@
 
 <script>
 import Header from "~/components/Header.vue"
-import Box from "~/components/index/Box.vue"
+import Box from "~/components/Box.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 import ContactUs from "~/components/ContactUs.vue"
 
