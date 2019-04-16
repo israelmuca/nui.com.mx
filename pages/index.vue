@@ -37,7 +37,7 @@
         <img class="no-rotate" src="~static/svg/index-female-male-books.svg" alt>
       </template>
     </TwoColumns>
-    <WideGallery></WideGallery>
+    <!-- <WideGallery></WideGallery> -->
     <Box>
       <ContactForm></ContactForm>
     </Box>
@@ -48,7 +48,7 @@
 import Header from "~/components/Header.vue"
 import Box from "~/components/Box.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
-import WideGallery from "~/components/WideGallery.vue"
+/* import WideGallery from "~/components/WideGallery.vue" */
 import ContactForm from "~/components/ContactForm.vue"
 
 export default {
@@ -56,7 +56,7 @@ export default {
     Header,
     Box,
     TwoColumns,
-    WideGallery,
+    /* WideGallery, */
     ContactForm
   }
 }
