@@ -59,7 +59,7 @@
         <div class="columns is-centered">
           <div class="column is-2 has-text-centered">
             <div class="field">
-              <div class="control">
+              <div class="control has-text-centered">
                 <button type="submit" class="button">
                   <span class="button-text">Enviar</span>
                 </button>
