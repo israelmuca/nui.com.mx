@@ -13,7 +13,8 @@
       <h1 class="sections-title has-text-centered">Section Title</h1>
       <h3
         class="sections-subtitle has-text-centered"
-      >Proident commodo voluptate duis proident cupidatat sit esse commodo eu eu cupidatat. Velit sunt commodo mollit aliqua veniam ad reprehenderit fugiat eiusmod nostrud. Duis culpa dolore in ea. Sit ex occaecat incididunt laborum sit cupidatat laboris commodo do exercitation voluptate culpa ipsum. Enim aliqua pariatur aliquip fugiat Lorem elit esse tempor. Cillum id do eiusmod adipisicing nulla voluptate aute Lorem elit nulla. In non ex nulla laboris aliquip veniam voluptate amet qui dolor eu duis exercitation reprehenderit.</h3>
+      >Nui Tecnologías Educativas es una empresa mexicana, con origen en la Ciudad de México y ahora con una nueva sede en la Ciudad de Monterrey, dedicada al desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo.
+      <br>Nuestro objetivo es apoyar a las instituciones educativas en México en la adopción de soluciones tecnológicas de vanguardia, que abonen y aporten valor al sector, pero sobre todo al proceso de enseñanza.</h3>
     </Box>
     <TwoColumns>
       <template v-slot:left>
