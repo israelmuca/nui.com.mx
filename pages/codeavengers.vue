@@ -44,6 +44,7 @@
       </template>
     </TwoColumns>
     <CommonConcerns></CommonConcerns>
+    <DoubleSlider></DoubleSlider>
     <Box>
       <ContactForm></ContactForm>
     </Box>
@@ -55,6 +56,7 @@ import Header from "~/components/Header.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 import WideImage from "~/components/WideImage.vue"
 import CommonConcerns from "~/components/CommonConcerns.vue"
+import DoubleSlider from "~/components/DoubleSlider.vue"
 import Box from "~/components/Box.vue"
 import ContactForm from "~/components/ContactForm.vue"
 
@@ -64,6 +66,7 @@ export default {
     TwoColumns,
     WideImage,
     CommonConcerns,
+    DoubleSlider,
     Box,
     ContactForm
   }
