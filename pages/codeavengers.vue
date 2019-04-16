@@ -26,33 +26,28 @@
           Originaria de Nueva Zelanda, cuenta con tecnología basada en la nube y se enfoca en la enseñanza de las Ciencias de la Computación y el Código.
           Creada en el 2012 por Michael Walsmley, Ph.D; Está diseñada para ser el principal apoyo para el profesor para su clases frente al grupo, pero también puede ser usada de forma individual para el autoaprendizaje.
           <br>
-          <br>Al dia de hoy más de 15 mil instituciones en el mundo han incorporado a Code Avengers como un aliado en su proceso de enseñanza.
-          La plataforma contempla un programa académico de vanguardia global, con la oferta más amplia de contenidos, el cual se adapta a cada institución y a sus objetivos particulares.
-          <br>
           <br>Nui Tecnologías Educativas cuenta con la comercialización exclusiva para México de Code Avengers.
         </p>
       </template>
     </TwoColumns>
-    <WideImage>
-      <p class="wide-image-content"><span class="image-title">Nui + Code Avengers</span>
-      <br><span class="image-subtitle">Nuestro equipo está compuesto de académicos e investigadores, desarrolladores de software, así como profesionales de servicio y atención al cliente.</span></p>
-    </WideImage>
     <TwoColumns>
       <template v-slot:left>
         <h1 class="title">
-          COMPULSORY DIGITECH
-          The problem we are solving
+          Éxito global
         </h1>
         <p class="content">
-          By 2020, there will be an estimated shortage of 2 million skilled IT professionals in the USA and Europe alone.
-          "90% of jobs will require at least basic ICT skills."
-          - Marianne Thyssen, EU commissioner
+          Al dia de hoy más de 15 mil instituciones en el mundo han incorporado a Code Avengers como un aliado en su proceso de enseñanza.
+          La plataforma contempla un programa académico de vanguardia global, con la oferta más amplia de contenidos, el cual se adapta a cada institución y a sus objetivos particulares.
         </p>
       </template>
       <template v-slot:right>
         <img class="no-rotate" src="~static/svg/ca-people-rocket-formal.svg" alt>
       </template>
     </TwoColumns>
+    <WideImage>
+      <p class="wide-image-content"><span class="image-title">Nui + Code Avengers</span>
+      <br><span class="image-subtitle">Nuestro equipo está compuesto de académicos e investigadores, desarrolladores de software, así como profesionales de servicio y atención al cliente.</span></p>
+    </WideImage>
     <CommonConcerns></CommonConcerns>
     <DoubleSlider></DoubleSlider>
     <Box>
