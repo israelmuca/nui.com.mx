@@ -30,14 +30,14 @@
                 @click.native="showNav = !showNav"
                 exact
               >
-                <span class="is-pulled-right">Acerca de Nui</span>
+                <span class="is-pulled-right">Nosotros</span>
               </nuxt-link>
               <nuxt-link
                 class="navbar-item nav-links is-clearfix"
                 to="/codeavengers"
                 @click.native="showNav = !showNav"
               >
-                <span class="is-pulled-right">Code Avengers</span>
+                <span class="is-pulled-right">Nuestra Oferta</span>
               </nuxt-link>
               <nuxt-link
                 class="navbar-item nav-links is-clearfix"
@@ -52,7 +52,7 @@
       </div>
       <div class="hero-body">
         <div class="columns hero-content">
-          <div class="column is-6 header-column">
+          <div class="column is-6 header-column has-text-justified">
             <slot name="text"></slot>
           </div>
         </div>
@@ -133,6 +133,12 @@ export default {
   background-color: rgba(0, 0, 0, 0) !important;
   box-shadow: none;
 }
+
+.nuxt-link-active {
+    background-color: transparent !important;
+    color: $black !important;
+    cursor: pointer;
+  }
 
 // Make sure the content is at the edge of the left and right and properly set on the height
 .hero-body {

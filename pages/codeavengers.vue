@@ -2,10 +2,10 @@
   <div>
     <Header>
       <template v-slot:text>
-        <h1 class="header-title">Esto es Code Avengers</h1>
+        <h1 class="header-title">Code Avengers</h1>
         <p
           class="header-subtitle"
-        >Code Avengers es una empresa de la enseñanza del código y la programación enfocada...</p>
+        >La informática abre más puertas que cualquier otra disciplina. Hoy el 71% de todos los trabajos en los Estados Unidos requieren habilidades digitales, siendo estas las mejor pagadas. Aprender desde los conceptos básicos, ayudará a los estudiantes en cualquier carrera o profesión que elijan para su futuro.</p>
       </template>
       <template v-slot:image>
         <img class="no-rotate" src="~static/svg/ca-people-programming.svg" alt>
@@ -13,22 +13,31 @@
     </Header>
     <TwoColumns>
       <template v-slot:left>
-        <img class="rotate" src="~static/logos/CA-Logo_Black.png" alt>
+        <div class="columns">
+          <div class="column has-text-centered">
+            <img class="rotate" src="~static/logos/CA-Logo_Black.png" alt>
+          </div>
+        </div>
       </template>
       <template v-slot:right>
         <!-- <h1 class="title">Quién es Code Avengers?</h1> -->
-        <p
-          class="content has-text-justified"
-        >Plataforma educativa originaria de Nueva Zelanda, cuenta con tecnología basada en la nube y se enfoca en la enseñanza de las Ciencias de la Computación y el Código.
-        Creada en el 2012 por Michael Walsmley, Ph.D; Code Avengers está diseñada para ser el principal apoyo para el profesor para su clases frente al grupo, pero también puede ser usada de forma individual para el autoaprendizaje.
-        <br><br>Al dia de hoy más de 15 mil instituciones en el mundo han incorporado a Code Avengers como un aliado en su proceso de enseñanza. 
-        La plataforma contempla un programa académico de vanguardia global, con la oferta más amplia de contenidos, el cual se adapta a cada institución y a sus objetivos particulares.  </p>
+        <p class="content has-text-justified">
+          Originaria de Nueva Zelanda, cuenta con tecnología basada en la nube y se enfoca en la enseñanza de las Ciencias de la Computación y el Código.
+          Creada en el 2012 por Michael Walsmley, Ph.D; Está diseñada para ser el principal apoyo para el profesor para su clases frente al grupo, pero también puede ser usada de forma individual para el autoaprendizaje.
+          <br>
+          <br>Al dia de hoy más de 15 mil instituciones en el mundo han incorporado a Code Avengers como un aliado en su proceso de enseñanza.
+          La plataforma contempla un programa académico de vanguardia global, con la oferta más amplia de contenidos, el cual se adapta a cada institución y a sus objetivos particulares.
+          <br>
+          <br>Nui Tecnologías Educativas cuenta con la comercialización exclusiva para México de Code Avengers.
+        </p>
       </template>
     </TwoColumns>
     <WideImage>
-      <h1
-        class="image-title"
-      >“Our mission is to make teaming fun, engaging & prepare your students for the opportunities of tomorrow"</h1>
+      <h1 class="image-title">
+        <!-- “Our mission is to make teaming fun, engaging & prepare your students for the opportunities of tomorrow" -->
+        Nui + Code Avengers
+        <br>Nuestro equipo está compuesto de académicos, profesores, desarrolladores de software y expertos en usabilidad de plataformas web, así como profesionales de atención y servicio al cliente.
+      </h1>
     </WideImage>
     <TwoColumns>
       <template v-slot:left>
@@ -77,7 +86,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .no-rotate {
   transform: scaleX(1);
 }
