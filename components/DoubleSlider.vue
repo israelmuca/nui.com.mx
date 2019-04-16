@@ -105,6 +105,16 @@ export default {
   max-height: 350px;
 }
 
+.hooper:focus {
+  outline: none;
+}
+.hooper-list:focus {
+  outline: none;
+}
+.hooper-track:focus {
+  outline: none;
+}
+
 .hooper-image-slide1 {
   @include hooper-image-slide;
   background-image: url("~static/images/gallery/gallery4.jpg");
@@ -127,6 +137,9 @@ export default {
 .hooper-indicator.is-active,
 .hooper-indicator:hover {
   background-color: $blue !important;
+}
+.hooper-indicator:focus {
+  outline: none;
 }
 
 .hooper-pagination {
