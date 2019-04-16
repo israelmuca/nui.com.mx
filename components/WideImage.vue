@@ -25,13 +25,14 @@ export default {
 @import "~/assets/css/main.scss";
 
 .wide-image {
-    margin: 50px 0px !important;
+  margin: 50px 0px !important;
 }
 
 .image-background {
   background-position: center;
   background-size: cover;
-  min-height: 400px;
+  height: 600px;
+  width: auto;
 
   display: flex;
   align-items: center;
@@ -39,6 +40,6 @@ export default {
 
 .image-title {
   @include image-title;
-  @include main-width('small');
+  @include main-width("small");
 }
 </style>

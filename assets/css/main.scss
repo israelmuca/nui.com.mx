@@ -188,5 +188,5 @@ $breakpoint-xl: 1500px;
 // Navbar
 @import "~~bulma/sass/components/navbar.sass";
 
-// Columns
-@import "~~bulma/sass/grid/columns.sass";
+// Grid, Columns & Tiles
+@import "~~bulma/sass/grid/_all.sass";
