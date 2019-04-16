@@ -1,0 +1,20 @@
+
+<svg width="204px" height="204px" viewBox="0 0 204 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CODE-AVENGERS" transform="translate(-638.000000, -2932.000000)" stroke="#32CAF0" stroke-width="4">
+            <g id="Group-16" transform="translate(640.000000, 2934.000000)">
+                <circle id="Oval-Copy" fill-rule="nonzero" cx="100" cy="100" r="100"></circle>
+                <g id="Group-17" transform="translate(32.000000, 55.000000)" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M89.0011023,35 C96.732462,35 103,41.2680315 103,49 C103,56.7319685 96.732462,63 89.0011023,63 C81.2697425,63 75,56.7319685 75,49 C75,41.2680315 81.2697425,35 89.0011023,35 Z" id="Stroke-1"></path>
+                    <path d="M96.6856569,61.2304859 C107.582464,64.6073369 115.006712,74.6421086 115,86 L62.8757759,86 C62.8802537,83.5497783 63.2362414,81.1106939 63.9303056,78.7607086 L57.7956739,81.0995566 C57.280723,81.2933468 56.7344274,81.3913557 56.1836539,81.3891282 C54.6656683,81.3913557 53.2484341,80.627332 52.4222738,79.3621266 L39.7276161,59.9162761 C38.3730715,57.8424975 38.9641455,55.069292 41.048577,53.7238975 C43.1330084,52.3762756 45.9182208,52.9643288 47.2727654,55.0381074 L57.9971764,71.4323181 L72.5053566,65.8859072 C75.0801108,63.7831714 78.0377197,62.1972097 81.2147425,61.2082111" id="Stroke-3"></path>
+                    <polyline id="Stroke-5" points="44.5615183 66 6 66 6 0 91 0 91 34.3962391"></polyline>
+                    <path d="M25,30 L40,52" id="Stroke-7"></path>
+                    <path d="M41,13 L75,13" id="Stroke-9"></path>
+                    <path d="M41,25 L75,25" id="Stroke-11"></path>
+                    <path d="M41,37 L68,37" id="Stroke-13"></path>
+                    <path d="M51,79 L0,79" id="Stroke-15"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

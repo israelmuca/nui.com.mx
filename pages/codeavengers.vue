@@ -43,6 +43,7 @@
         <img class="no-rotate" src="~static/svg/ca-people-rocket-formal.svg" alt>
       </template>
     </TwoColumns>
+    <CommonConcerns></CommonConcerns>
     <Box>
       <ContactForm></ContactForm>
     </Box>
@@ -53,7 +54,7 @@
 import Header from "~/components/Header.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 import WideImage from "~/components/WideImage.vue"
-
+import CommonConcerns from "~/components/CommonConcerns.vue"
 import Box from "~/components/Box.vue"
 import ContactForm from "~/components/ContactForm.vue"
 
@@ -62,7 +63,7 @@ export default {
     Header,
     TwoColumns,
     WideImage,
-
+    CommonConcerns,
     Box,
     ContactForm
   }
