@@ -35,7 +35,7 @@
         <h1 class="title">
           Éxito global
         </h1>
-        <p class="content">
+        <p class="content has-text-justified">
           Al dia de hoy más de 15 mil instituciones en el mundo han incorporado a Code Avengers como un aliado en su proceso de enseñanza.
           La plataforma contempla un programa académico de vanguardia global, con la oferta más amplia de contenidos, el cual se adapta a cada institución y a sus objetivos particulares.
         </p>
