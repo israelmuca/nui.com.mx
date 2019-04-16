@@ -22,7 +22,7 @@
         >Una empresa de tecnología de Nueva Zelanda que está construyendo el futuro de la educación digital del código y la programación.</p>
       </template>
     </TwoColumns>
-    <WideImage imageURL="@images/girl-teacher.jpeg">
+    <WideImage>
       <h1
         class="image-title"
       >“Our mission is to make teaming fun, engaging & prepare your students for the opportunities of tomorrow"</h1>

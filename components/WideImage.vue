@@ -1,6 +1,6 @@
 <template>
   <div class="columns wide-image">
-    <div class="column is-12 has-text-centered image-background" :style="backgroundImage">
+    <div class="column is-12 has-text-centered image-background">
       <slot></slot>
     </div>
   </div>
@@ -8,14 +8,6 @@
 
 <script>
 export default {
-  props: ["imageURL"],
-  computed: {
-    backgroundImage: function() {
-      return `background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("${
-        this.imageURL
-      }");`
-    }
-  }
 }
 </script>
 
@@ -29,6 +21,8 @@ export default {
 }
 
 .image-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("~~static/images/girl-teacher.jpeg");
   background-position: center;
   background-size: cover;
   height: 600px;
