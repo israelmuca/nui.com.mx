@@ -155,7 +155,22 @@ export default {
   z-index: 100;
   margin-top: -500px;
   padding-right: 0px;
-  margin-bottom: 50px !important;
+  margin-bottom: 0px !important;
+
+  & {
+    @media (min-width: 900px) and (max-width: $breakpoint-md) {
+      margin-bottom: 50px !important;
+    }
+    @media (min-width: $breakpoint-sm) and (max-width: 900px) {
+      margin-bottom: 100px !important;
+    }
+    @media (max-width: $breakpoint-sm) {
+      margin-top: -400px;
+    }
+    @media (max-width: 400px) {
+      margin-top: -320px;
+    }
+  }
 }
 
 .header-column {
@@ -182,19 +197,6 @@ export default {
     @media (min-width: 600px) and (max-width: $breakpoint-sm) {
       margin-top: 0px;
     }
-  }
-}
-
-// Media query for when the columns are stacked on top of each other
-@media (max-width: $breakpoint-sm) {
-  .header-content {
-    margin-top: -300px;
-  }
-}
-
-@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
-  .header-content {
-    margin-bottom: 150px !important;
   }
 }
 </style>
