@@ -34,7 +34,7 @@
               </nuxt-link>
               <nuxt-link
                 class="navbar-item nav-links is-clearfix"
-                to="/codeavengers"
+                to="/nuestraoferta"
                 @click.native="showNav = !showNav"
               >
                 <span class="is-pulled-right">Nuestra Oferta</span>
