@@ -116,18 +116,18 @@ export default {
   margin-bottom: 40px;
 }
 
-.label {
+.label, textarea {
   @include sections-content;
 }
 
 .button {
   @include sections-content;
-  background-color: $dark-blue;
+  background-color: $blue;
   color: $white;
   width: 150px;
 
   &:hover {
-    background-color: $purple;
+    background-color: $dark-blue;
     color: $white;
   }
 }

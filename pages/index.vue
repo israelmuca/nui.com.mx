@@ -39,7 +39,7 @@
     </TwoColumns>
     <WideGallery></WideGallery>
     <Box>
-      <ContactUs></ContactUs>
+      <ContactForm></ContactForm>
     </Box>
   </div>
 </template>
@@ -49,7 +49,7 @@ import Header from "~/components/Header.vue"
 import Box from "~/components/Box.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 import WideGallery from "~/components/WideGallery.vue"
-import ContactUs from "~/components/ContactUs.vue"
+import ContactForm from "~/components/ContactForm.vue"
 
 export default {
   components: {
@@ -57,7 +57,7 @@ export default {
     Box,
     TwoColumns,
     WideGallery,
-    ContactUs
+    ContactForm
   }
 }
 </script>

@@ -4,8 +4,9 @@
 */
 $black: #000020;
 $dark-blue: #1e3462;
-$light-blue: #8cd0e7;
+$blue: #3123ae;
 $bright-blue: #32caf0;
+$light-blue: #8cd0e7;
 $purple: #5c3a8d;
 $red: #d0021b;
 $orange: #f5a623;
@@ -113,6 +114,15 @@ $breakpoint-xl: 1500px;
   letter-spacing: 1px;
 }
 
+@mixin footer-content {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  color: $white;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: .4px;
+}
+
 /*
 ** Define container size per breakpoint
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -187,6 +197,9 @@ $breakpoint-xl: 1500px;
 
 // Navbar
 @import "~~bulma/sass/components/navbar.sass";
+
+// Level
+@import "~~bulma/sass/components/level.sass";
 
 // Grid, Columns & Tiles
 @import "~~bulma/sass/grid/_all.sass";
