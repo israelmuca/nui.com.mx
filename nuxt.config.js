@@ -28,7 +28,7 @@ export default {
   */
   css: [
     '@/assets/css/main.scss',
-    '@/assets/css/no-overflow.css'
+    '@/assets/css/global.css'
   ],
 
   /*

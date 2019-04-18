@@ -1,20 +1,22 @@
 <template>
   <div class="tile is-ancestor main-contact-info">
-    <div class="tile is-4 is-vertical is-parent">
+    <div class="tile is-4 is-vertical is-parent text-tiles">
       <div class="tile is-child text-tile-one"></div>
       <div class="tile is-child text-tile">
-        <h1 class="sections-title">Contact Us</h1>
+        <h1 class="sections-title">Contáctanos</h1>
         <p class="sections-content">
-          Call 8333 3333
+          Call 01 (+81) 8000 7159
           <br>Email contacto@nui.com.mx
         </p>
       </div>
       <div class="tile is-child text-tile">
-        <h1 class="sections-title">Visit Us</h1>
+        <h1 class="sections-title">Visítanos</h1>
         <p class="sections-content">
-          Av. Ricardo Margain Zozaya 575
-          <br>SPGG, N.L.
-          <br>C.P. 66273, México
+          Ricardo Margain 575
+          <br>Edificio C Int. 100
+          <br>Col. Santa Engracia
+          <br>S.P.G.G., N.L.
+          <br>C.P. 66267
         </p>
       </div>
     </div>
@@ -24,11 +26,6 @@
   </div>
 </template>
 
-
-<script>
-export default {}
-</script>
-
 <style lang="scss" scoped>
 @import "~/assets/css/main.scss";
 
@@ -37,16 +34,21 @@ export default {}
   margin-bottom: 100px !important;
   margin-right: 0px !important;
   @include main-width("normal");
-}
-@media (max-width: $breakpoint-sm) {
-  .main-contact-info {
+
+  @media (max-width: $breakpoint-sm) {
     margin-top: 100px !important;
     margin-bottom: 100px !important;
   }
 }
 
+.text-tiles {
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 30px;
+  }
+}
+
 .text-tile-one {
-    max-height: 100px;
+  max-height: 100px;
 }
 
 .sections-title {

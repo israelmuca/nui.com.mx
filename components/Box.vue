@@ -22,10 +22,8 @@ export default {}
   margin: 100px;
 
   padding: 40px 80px;
-}
 
-@media (max-width: $breakpoint-sm) {
-  .box {
+  @media (max-width: $breakpoint-sm) {
     padding: 20px 25px;
   }
 }
