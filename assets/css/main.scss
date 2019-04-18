@@ -218,6 +218,7 @@ $breakpoint-xl: 1500px;
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 @mixin main-width($size) {
+  @include transition(1);
   @if $size == "small" {
     @media (max-width: $breakpoint-xs) {
       margin-right: 3% !important;
@@ -287,6 +288,14 @@ $breakpoint-xl: 1500px;
   max-height: 350px;
   background-position: center;
   background-size: cover;
+}
+
+/*
+** Mixin for transitions
+** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+@mixin transition($duration) {
+  transition: all #{$duration}s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 /*

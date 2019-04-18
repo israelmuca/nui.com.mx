@@ -29,6 +29,7 @@ export default {}
 @import "~/assets/css/main.scss";
 
 #particles-js {
+  @include transition(1);
   background-color: $dark-blue;
   height: 100px;
 

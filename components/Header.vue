@@ -101,6 +101,7 @@ export default {
     @include main-width("normal");
 
     .nui-logo {
+      @include transition(2);
       height: 100px;
       max-height: 200px !important;
       width: auto;
@@ -114,6 +115,7 @@ export default {
     }
 
     .navbar-burger {
+      @include transition(2);
       margin-top: 33px;
       color: $white;
       & {
@@ -128,6 +130,7 @@ export default {
 
     .nav-links {
       @include nav-links;
+      @include transition(0.5);
     }
 
     .is-active {
@@ -167,6 +170,7 @@ export default {
 
 .header-content {
   @include main-width("normal");
+  @include transition(2);
   z-index: 100;
   margin-top: -500px;
   padding-right: 0px;
@@ -191,6 +195,7 @@ export default {
     margin-top: 50px;
   }
   .image-column {
+    @include transition(2);
     & {
       @media (max-width: 450px) {
         margin-top: 130px;
