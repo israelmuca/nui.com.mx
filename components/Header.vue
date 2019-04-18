@@ -83,7 +83,6 @@ export default {
 @import "~/assets/css/angled-edges.scss";
 @import "~/assets/css/main.scss";
 
-// Give the whole hero a max height, apply the angle and set the z-index to apply content on top
 .hero {
   z-index: 0;
   height: 800px;
@@ -93,62 +92,77 @@ export default {
     $angle-position-y: "bottom",
     $angle-position-x: "right"
   );
-}
 
-// Set the Navbar CSS
-.nui-logo {
-  height: 100px;
-  max-height: 200px !important;
-  width: auto;
+  /*
+  ** Head
+  ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  */
+  .navbar {
+    @include main-width("normal");
 
-  & {
-    @media (max-width: $breakpoint-sm) {
-      height: 75px;
+    .nui-logo {
+      height: 100px;
+      max-height: 200px !important;
       width: auto;
+
+      & {
+        @media (max-width: $breakpoint-sm) {
+          height: 75px;
+          width: auto;
+        }
+      }
     }
-  }
-}
 
-.navbar {
-  @include main-width("normal");
-}
+    .navbar-burger {
+      margin-top: 33px;
+      color: $white;
+      & {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0) !important;
+        }
+        @media (max-width: $breakpoint-sm) {
+          margin-top: 18px;
+        }
+      }
+    }
 
-.nav-links {
-  @include nav-links;
-}
+    .nav-links {
+      @include nav-links;
+    }
 
-.navbar-burger {
-  margin-top: 33px;
-  color: $white;
-  & {
-    &:hover {
+    .is-active {
       background-color: rgba(0, 0, 0, 0) !important;
+      box-shadow: none;
     }
-    @media (max-width: $breakpoint-sm) {
-      margin-top: 18px;
+
+    .nuxt-link-active {
+      background-color: transparent !important;
+      color: $black !important;
+      cursor: pointer;
     }
   }
-}
 
-.is-active {
-  background-color: rgba(0, 0, 0, 0) !important;
-  box-shadow: none;
-}
+  /*
+  ** Body
+  ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  */
+  .hero-body {
+    padding-left: 0px;
+    padding-right: 0px;
 
-.nuxt-link-active {
-  background-color: transparent !important;
-  color: $black !important;
-  cursor: pointer;
-}
+    .hero-content {
+      @include main-width("normal");
 
-// Make sure the content is at the edge of the left and right and properly set on the height
-.hero-body {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.hero-content {
-  @include main-width("normal");
+      // Set the font options for the title and subtitle
+      // These are set in the page.vue that sends them in the text slot
+      .header-title {
+        @include header-title;
+      }
+      .header-subtitle {
+        @include header-subtitle;
+      }
+    }
+  }
 }
 
 .header-content {
@@ -172,32 +186,22 @@ export default {
       margin-top: -320px;
     }
   }
-}
 
-.header-column {
-  margin-top: 50px;
-}
-
-.image-column {
-  & {
-    @media (max-width: 450px) {
-      margin-top: 130px;
-    }
-    @media (min-width: 450px) and (max-width: 600px) {
-      margin-top: 80px;
-    }
-    @media (min-width: 600px) and (max-width: $breakpoint-sm) {
-      margin-top: 0px;
+  .header-column {
+    margin-top: 50px;
+  }
+  .image-column {
+    & {
+      @media (max-width: 450px) {
+        margin-top: 130px;
+      }
+      @media (min-width: 450px) and (max-width: 600px) {
+        margin-top: 80px;
+      }
+      @media (min-width: 600px) and (max-width: $breakpoint-sm) {
+        margin-top: 0px;
+      }
     }
   }
-}
-
-// Set the font options for the title and subtitle
-.header-title {
-  @include header-title;
-}
-
-.header-subtitle {
-  @include header-subtitle;
 }
 </style>

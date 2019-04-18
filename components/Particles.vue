@@ -31,22 +31,11 @@ export default {}
 #particles-js {
   background-color: $dark-blue;
   height: 100px;
-}
 
-#particles-js * {
-  background-color: $dark-blue;
-  height: 100px;
-}
-
-@media (max-width: $breakpoint-sm) {
-  #particles-js {
-    background-color: $dark-blue;
-    height: 75px;
-  }
-
-  #particles-js * {
-    background-color: $dark-blue;
-    height: 75px;
+  & {
+    @media (max-width: $breakpoint-sm) {
+        height: 75px;
+    }
   }
 }
 </style>
