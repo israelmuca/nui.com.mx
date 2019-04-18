@@ -168,16 +168,10 @@ export default {
   }
 }
 
-.hooper-image-slide1 {
-  @include hooper-image-slide;
-  background-image: url("~static/images/gallery/gallery4.jpg");
-}
-.hooper-image-slide2 {
-  @include hooper-image-slide;
-  background-image: url("~static/images/gallery/gallery11.jpg");
-}
-.hooper-image-slide3 {
-  @include hooper-image-slide;
-  background-image: url("~static/images/gallery/gallery2.jpg");
+@for $i from 1 through 3 {
+  .hooper-image-slide#{$i} {
+    @include hooper-image-slide;
+    background-image: url("~static/images/gallery/gallery#{$i}.jpg");
+  }
 }
 </style>
