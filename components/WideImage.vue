@@ -1,9 +1,9 @@
 <template>
-  <div class="columns wide-image">
+  <section class="columns wide-image">
     <div class="column is-12 has-text-centered image-background">
       <slot></slot>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

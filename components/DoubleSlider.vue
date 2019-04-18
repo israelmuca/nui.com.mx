@@ -1,6 +1,6 @@
 <template>
   <section class="hooper-section">
-    <div class="columns double-hooper">
+    <div class="columns hoopers">
       <div class="column is-6">
         <hooper :settings="hooperSettings" sync="hooper2">
           <slide class="slide-1">
@@ -77,8 +77,8 @@ export default {
     return {
       hooperSettings: {
         centerMode: true,
-        /* autoPlay: true,
-        playSpeed: 7000, */
+        autoPlay: true,
+        playSpeed: 7000,
         infiniteScroll: true,
         wheelControl: false
       }
@@ -90,61 +90,30 @@ export default {
 <style lang="scss">
 @import "~/assets/css/main.scss";
 
-.double-hooper {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .hooper-section {
   margin-top: 100px;
   @include main-width("normal");
-}
-@media (max-width: $breakpoint-sm) {
-  .hooper-section {
+  @media (max-width: $breakpoint-sm) {
     margin-top: 50px;
   }
-}
 
-.hooper {
-  min-height: 350px;
-  max-height: 350px;
-}
+  .hoopers {
+    margin-left: 0px;
+    margin-right: 0px;
 
-.hooper:focus {
-  outline: none;
-}
-.hooper-list:focus {
-  outline: none;
-}
-.hooper-track:focus {
-  outline: none;
-}
+    .hooper {
+      min-height: 350px;
+      max-height: 350px;
+      &:focus {
+        outline: none;
+      }
+    }
 
-.hooper-image-slide1 {
-  @include hooper-image-slide;
-  background-image: url("~static/images/gallery/gallery4.jpg");
-}
-.hooper-image-slide2 {
-  @include hooper-image-slide;
-  background-image: url("~static/images/gallery/gallery11.jpg");
-}
-.hooper-image-slide3 {
-  @include hooper-image-slide;
-  background-image: url("~static/images/gallery/gallery2.jpg");
-}
-
-.hooper-indicator {
-  width: 60px !important;
-  border-radius: 0px !important;
-  margin-bottom: 20px !important;
-  background-color: $light-grey !important;
-}
-.hooper-indicator.is-active,
-.hooper-indicator:hover {
-  background-color: $blue !important;
-}
-.hooper-indicator:focus {
-  outline: none;
+    .hooper-list:focus,
+    .hooper-track:focus {
+      outline: none;
+    }
+  }
 }
 
 .hooper-pagination {
@@ -160,14 +129,26 @@ export default {
     padding-top: 4px;
     padding-left: 10px;
   }
-}
-@media (max-width: $breakpoint-sm) {
-  .hooper-pagination {
-    top: 300px;
+
+  .hooper-indicator {
+    width: 60px !important;
+    border-radius: 0px !important;
+    margin-bottom: 20px !important;
+    background-color: $light-grey !important;
+    &.is-active,
+    &:hover {
+      background-color: $blue !important;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }
 
-// Content
+/*
+** Content
+** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
 .cc-slide-title {
   @include cc-slide-title;
   margin-top: 30px;
@@ -185,5 +166,18 @@ export default {
     content: url("~static/svg/common-concerns/checkmark.svg");
     padding-right: 15px;
   }
+}
+
+.hooper-image-slide1 {
+  @include hooper-image-slide;
+  background-image: url("~static/images/gallery/gallery4.jpg");
+}
+.hooper-image-slide2 {
+  @include hooper-image-slide;
+  background-image: url("~static/images/gallery/gallery11.jpg");
+}
+.hooper-image-slide3 {
+  @include hooper-image-slide;
+  background-image: url("~static/images/gallery/gallery2.jpg");
 }
 </style>
