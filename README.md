@@ -1,4 +1,5 @@
-# My company's webpage with a serverless function to mail the contact form | [![Netlify Status](https://api.netlify.com/api/v1/badges/0df48d1d-8f7e-4541-82b9-4e3ce6027d9e/deploy-status)](https://app.netlify.com/sites/nui/deploys)
+# My company's webpage with a serverless function to mail the contact form
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0df48d1d-8f7e-4541-82b9-4e3ce6027d9e/deploy-status)](https://app.netlify.com/sites/nui/deploys)  
 > A Nuxt.js static website with animations, transitions and a Contact Form
 
 ## Features
@@ -84,3 +85,6 @@ If you have any problems implementing this, please don't hesitate and create a G
 - [Hooper's Slider](https://github.com/baianat/hooper)
 - [Vue-Particles](https://github.com/creotip/vue-particles)
 - ❤️
+
+## Hosted in
+- [Netlify](https://www.netlify.com/)
