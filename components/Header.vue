@@ -154,7 +154,7 @@ export default {
       @include main-width("normal");
 
       // Set the font options for the title and subtitle
-      // These are set in the page.vue that sends them in the text slot
+      // These classes are set in the page.vue that sends them in the text slot
       .header-title {
         @include header-title;
       }

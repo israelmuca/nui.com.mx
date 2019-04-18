@@ -124,6 +124,13 @@ $breakpoint-xl: 1500px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 1px;
+
+  & {
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
 }
 
 @mixin image-subtitle {
@@ -133,6 +140,13 @@ $breakpoint-xl: 1500px;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 1px;
+
+  & {
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
 }
 
 @mixin cc-title {

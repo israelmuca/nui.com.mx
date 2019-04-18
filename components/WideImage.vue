@@ -6,18 +6,23 @@
   </div>
 </template>
 
-<script>
-export default {
-}
-</script>
-
-
-
 <style lang="scss" scoped>
 @import "~/assets/css/main.scss";
 
 .wide-image {
   margin: 50px 0px !important;
+
+  // These classes are set in the page.vue that sends them in the slot
+  .wide-image-content {
+    @include main-width("small");
+  }
+  // Set the font options for the title and subtitle
+  .image-title {
+    @include image-title;
+  }
+  .image-subtitle {
+    @include image-subtitle;
+  }
 }
 
 .image-background {
@@ -30,17 +35,5 @@ export default {
 
   display: flex;
   align-items: center;
-}
-
-.wide-image-content {
-@include main-width("small");
-}
-
-.image-title {
-  @include image-title;
-}
-
-.image-subtitle {
-  @include image-subtitle;
 }
 </style>
