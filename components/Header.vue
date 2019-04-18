@@ -100,11 +100,12 @@ export default {
   height: 100px;
   max-height: 200px !important;
   width: auto;
-}
-@media (max-width: $breakpoint-sm) {
-  .nui-logo {
-    height: 75px;
-    width: auto;
+
+  & {
+    @media (max-width: $breakpoint-sm) {
+      height: 75px;
+      width: auto;
+    }
   }
 }
 
@@ -119,13 +120,13 @@ export default {
 .navbar-burger {
   margin-top: 33px;
   color: $white;
-  &:hover {
-    background-color: transparent;
-  }
-}
-@media (max-width: $breakpoint-sm) {
-  .navbar-burger {
-    margin-top: 18px;
+  & {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+    @media (max-width: $breakpoint-sm) {
+      margin-top: 18px;
+    }
   }
 }
 
@@ -177,15 +178,6 @@ export default {
   margin-top: 50px;
 }
 
-// Set the font options for the title and subtitle
-.header-title {
-  @include header-title;
-}
-
-.header-subtitle {
-  @include header-subtitle;
-}
-
 .image-column {
   & {
     @media (max-width: 450px) {
@@ -198,5 +190,14 @@ export default {
       margin-top: 0px;
     }
   }
+}
+
+// Set the font options for the title and subtitle
+.header-title {
+  @include header-title;
+}
+
+.header-subtitle {
+  @include header-subtitle;
 }
 </style>
