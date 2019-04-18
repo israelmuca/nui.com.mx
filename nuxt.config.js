@@ -27,8 +27,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/main.scss',
-    '@/assets/css/global.css'
+    '@/assets/css/main.scss'
   ],
 
   /*
@@ -60,8 +59,10 @@ export default {
   env: {
     API_URL: process.env.API_URL,
     SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
-    BASE_URL: process.env.BASE_URL
+    BASE_URL: process.env.BASE_URL,
+    MAIL_TO: process.env.MAIL_TO
   },
+  
   /*
   ** Build configuration
   */

@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import Header from "~/components/Header.vue"
+import Header from "~/components/layout/Header.vue"
 import Box from "~/components/Box.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 /* import WideGallery from "~/components/WideGallery.vue" */

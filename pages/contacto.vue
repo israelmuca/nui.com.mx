@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Header from "~/components/Header.vue"
+import Header from "~/components/layout/Header.vue"
 import ContactInfo from "~/components/ContactInfo.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 import Box from "~/components/Box.vue"

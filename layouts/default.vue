@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Particles from "~/components/Particles.vue"
-import Footer from "~/components/Footer.vue"
+import Particles from "~/components/layout/Particles.vue"
+import Footer from "~/components/layout/Footer.vue"
 
 export default {
   components: {

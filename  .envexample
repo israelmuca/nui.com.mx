@@ -1,0 +1,5 @@
+API_URL="http://localhost:9000"
+SENDGRID_API_KEY = "INSERT_YOUR_API_KEY_HERE_AND_IN_NETLIFY'S_ADMIN_PANEL"
+BASE_URL="http://localhost:3000"
+
+MAIL_TO="mail@mail.com"

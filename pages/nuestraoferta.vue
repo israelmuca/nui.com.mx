@@ -56,11 +56,11 @@
 </template>
 
 <script>
-import Header from "~/components/Header.vue"
+import Header from "~/components/layout/Header.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 import WideImage from "~/components/WideImage.vue"
-import CommonConcerns from "~/components/CommonConcerns.vue"
-import DoubleSlider from "~/components/DoubleSlider.vue"
+import CommonConcerns from "~/components/complete/CommonConcerns.vue"
+import DoubleSlider from "~/components/complete/DoubleSlider.vue"
 import Box from "~/components/Box.vue"
 import ContactForm from "~/components/ContactForm.vue"
 

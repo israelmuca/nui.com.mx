@@ -14,9 +14,15 @@ $light-grey: #e0e0e0;
 $white: #fafafa;
 
 /*
-** Define breakpoints
+** Define breakpoints and min size of the page
 ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
+
+html,
+body {
+  min-width: 300px;
+}
+
 $breakpoint-xs: 360px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 1023px;

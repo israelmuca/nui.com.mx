@@ -32,7 +32,7 @@ exports.handler = async (event, context) => {
         // Construct the message
         const email = {
             from: `${payload.email}`,
-            to: `test@nonononoonon.mx`,
+            to: `${process.env.MAIL_TO}`,
             subject: `Nui: Forma de contacto`,
             text:
                 `Has recibido el siguiente mensaje en tu forma de contacto.\n\n
