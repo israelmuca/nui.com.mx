@@ -85,7 +85,10 @@ export default {
 
 .hero {
   z-index: 0;
-  height: 800px;
+  height: 700px;
+  @media (max-width: $breakpoint-sm) {
+    height: 800px;
+  }
   background-color: $dark-blue;
   @include angle-edge(
     $angle: 4,
@@ -150,6 +153,7 @@ export default {
   ** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   */
   .hero-body {
+    padding-top: 100px !important;
     padding-left: 0px;
     padding-right: 0px;
 
@@ -172,22 +176,27 @@ export default {
   @include main-width("normal");
   @include transition(2);
   z-index: 100;
-  margin-top: -500px;
   padding-right: 0px;
+
+  margin-top: -550px;
   margin-bottom: 0px !important;
 
   & {
     @media (min-width: 900px) and (max-width: $breakpoint-md) {
-      margin-bottom: 50px !important;
+      margin-bottom: 75px !important;
     }
     @media (min-width: $breakpoint-sm) and (max-width: 900px) {
+      margin-top: -500px;
       margin-bottom: 100px !important;
     }
     @media (max-width: $breakpoint-sm) {
       margin-top: -400px;
     }
+    @media (min-width: 400px) and (max-width: 635px) {
+      margin-top: -380px;
+    }
     @media (max-width: 400px) {
-      margin-top: -320px;
+      margin-top: -350px;
     }
   }
 
@@ -196,16 +205,14 @@ export default {
   }
   .image-column {
     @include transition(2);
-    & {
-      @media (max-width: 450px) {
-        margin-top: 130px;
-      }
-      @media (min-width: 450px) and (max-width: 600px) {
-        margin-top: 80px;
-      }
-      @media (min-width: 600px) and (max-width: $breakpoint-sm) {
-        margin-top: 0px;
-      }
+    @media (min-width: 600px) and (max-width: $breakpoint-sm) {
+      margin-top: 0px;
+    }
+    @media (min-width: 450px) and (max-width: 600px) {
+      margin-top: 80px;
+    }
+    @media (max-width: 450px) {
+      margin-top: 130px;
     }
   }
 }
