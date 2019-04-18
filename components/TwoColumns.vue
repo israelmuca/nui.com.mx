@@ -1,52 +1,64 @@
 <template>
-  <div class="columns is-vcentered two-columns">
-    <div class="column is-5">
+  <section class="columns is-vcentered two-columns">
+    <div class="column is-6 left-column">
       <slot name="left"></slot>
     </div>
-    <div class="column is-1 mobile-dissapear"></div>
-    <div class="column is-6">
+    <div class="column is-6 right-column">
       <slot name="right"></slot>
     </div>
-  </div>
+  </section>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style lang="scss" scoped>
 @import "~/assets/css/main.scss";
 
 .two-columns {
   @include main-width("normal");
-}
 
-.title {
-  @include sections-title;
-}
+  .left-column {
+    padding-right: 25px;
+    & {
+      @media (max-width: $breakpoint-sm) {
+        padding-right: 12px;
+      }
+    }
+  }
+  .right-column {
+    padding-left: 25px;
+    & {
+      @media (max-width: $breakpoint-sm) {
+        padding-left: 12px;
+      }
+    }
+  }
 
-.content {
-  @include sections-content;
-  padding-top: 25px;
-}
-
-.rotate,
-.no-rotate {
-  max-height: 500px;
-  width: auto;
-}
-
-@media (max-width: $breakpoint-sm) {
+  // Set the font options for the title and content
+  // These are set in the page.vue that sends them in the left or right slot
+  .title {
+    @include sections-title;
+  }
+  .content {
+    @include sections-content;
+    padding-top: 25px;
+  }
+  // Set the height and width options for the SVGs
+  // These are set in the page.vue that sends them in the left or right slot
   .rotate,
   .no-rotate {
-    max-height: 400px;
+    max-height: 500px;
     width: auto;
-  }
 
-  .mobile-dissapear {
-    display: none;
+    & {
+      @media (max-width: $breakpoint-sm) {
+        max-height: 400px;
+        width: auto;
+      }
+    }
   }
+}
 
+// These classes are only modified on this breakpoint
+@media (max-width: $breakpoint-sm) {
   .mobile-negative-top-margin {
     margin-top: -85px;
   }
