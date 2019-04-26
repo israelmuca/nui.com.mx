@@ -5,8 +5,7 @@
         <h1 class="header-title">Innovación Tecnológica</h1>
         <p
           class="header-subtitle"
-        >La informática abre más puertas que cualquier otra disciplina. Hoy el 71% de todos los trabajos en los Estados Unidos requieren habilidades digitales, siendo estas las mejor pagadas. Aprender desde los conceptos básicos, ayudará a los estudiantes en cualquier carrera o profesión que elijan para su futuro.
-        <br>La innovacion tecnologica permite enfrentar los retos del futuro de mejor manera. Maximizando los recursos financieros, humanos y de infraestructura permitiendo a las organizaciones ascender a las mejores posiciones de su sector.</p>
+        >La informática abre más puertas que cualquier otra disciplina. Hoy el 71% de todos los trabajos en los Estados Unidos requieren habilidades digitales, siendo estas las mejor pagadas. Aprender desde los conceptos básicos, ayudará a los estudiantes en cualquier carrera o profesión que elijan para su futuro.</p>
       </template>
       <template v-slot:image>
         <img class="no-rotate" src="~static/svg/ca-people-programming.svg" alt>
@@ -40,7 +39,7 @@
         </p>
       </template>
       <template v-slot:right>
-        <img class="no-rotate" src="~static/svg/ca-people-rocket-formal.svg" alt>
+        <img class="no-rotate" src="~static/svg/index-people-rocket-informal.svg" alt>
       </template>
     </TwoColumns>
     <WideImage>
