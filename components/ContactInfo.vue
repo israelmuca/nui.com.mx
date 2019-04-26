@@ -21,10 +21,22 @@
       </div>
     </div>
     <div class="tile is-8 is-parent">
-      <div class="tile is-child map-image"></div>
+      <div class="tile is-child map-image">
+        <Maps></Maps>
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+import Maps from "~/components/complete/Maps.vue"
+export default {
+  components: {
+    Maps
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
 @import "~/assets/css/main.scss";
@@ -61,10 +73,6 @@
 }
 
 .map-image {
-  background-image: url("~~static/images/map.png");
-  background-position: center;
   min-height: 600px;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
 }
 </style>
