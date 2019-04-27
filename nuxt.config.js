@@ -134,7 +134,8 @@ export default {
     API_URL: process.env.API_URL,
     SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
     BASE_URL: process.env.BASE_URL,
-    MAIL_TO: process.env.MAIL_TO
+    MAIL_TO: process.env.MAIL_TO,
+    GMAPS_API_KEY: process.env.GMAPS_API_KEY
   },
 
   /*
