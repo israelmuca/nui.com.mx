@@ -6,7 +6,8 @@
         <p
           class="header-subtitle"
         >Desde escuelas en crecimiento hasta organizaciones internacionales se pueden ver beneficiados con la innovación tecnológica.
-        <br>Permítenos ayudarte en este proceso.</p>
+        <br>Sin embargo entendemos que estos procesos puede ser complicados y costosos si no se llevan a cabo de una manera planeada y precisa.
+        <br><br>Permítenos ayudarte en este proceso.</p>
       </template>
       <template v-slot:image>
         <img class="no-rotate" src="~static/svg/contacto-people-home-office.svg" alt>
