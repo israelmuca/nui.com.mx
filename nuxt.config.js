@@ -11,7 +11,71 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Página web de Nui" }
+      // SEO meta
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Nui - Tecnologías Educativas - - Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content:
+          "educación tecnología programación plan estudio código primaria secundaria preparatoria"
+      },
+      // Facebook's Open Graph Markup
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://nui.com.mx"
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website"
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Nui - Tecnologías Educativas."
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Nui - Tecnologías Educativas - - Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content:
+          "~static/logos/CA-Logo_Black.png"
+      },
+      // Twitter's Card Markup
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary_large_image"
+      },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content:
+          "Nui - Tecnologías Educativas."
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content:
+          "Nui - Tecnologías Educativas - - Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content:
+          "~static/logos/CA-Logo_Black.png"
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
