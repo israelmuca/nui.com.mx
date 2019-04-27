@@ -51,11 +51,16 @@ export default {
   margin-top: 70px;
 
   .column-text {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: center;
-    border: 2px solid $black;
-
+    background-color: $dark-blue;
+    border-radius: 5px;
+    
+    &:hover {
+      @include transition(.5);
+      background-color: $black;
+    }
     .text {
       @include arrows-text;
     }
