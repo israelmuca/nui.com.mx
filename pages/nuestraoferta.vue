@@ -85,7 +85,7 @@ export default {
         },
         right: {
           url: "/contacto",
-          text: "contácto"
+          text: "contacto"
         }
       }
     }
