@@ -50,7 +50,7 @@ export default {
         hid: "og:image",
         property: "og:image",
         content:
-          "~static/logos/CA-Logo_Black.png"
+          "http://nui.com.mx/_nuxt/img/7c38d21.svg"
       },
       // Twitter's Card Markup
       {
@@ -74,7 +74,7 @@ export default {
         hid: "twitter:image",
         name: "twitter:image",
         content:
-          "~static/logos/CA-Logo_Black.png"
+          "http://nui.com.mx/_nuxt/img/7c38d21.svg"
       }
     ],
     link: [
