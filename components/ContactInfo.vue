@@ -1,16 +1,22 @@
 <template>
   <div class="tile is-ancestor main-contact-info">
     <div class="tile is-4 is-vertical is-parent text-tiles">
-      <div class="tile is-child text-tile-one"></div>
-      <div class="tile is-child text-tile">
-        <h1 class="sections-title">Contáctanos</h1>
-        <p class="sections-content">
-          Call 01 (+81) 8000 7159
-          <br>Email contacto@nui.com.mx
-        </p>
+      <div class="tile is-child text-tile first-tile">
+        <h1 class="sections-title">
+          <fa class="icons" :icon="fas.faPhone"/>
+        </h1>
+        <p class="sections-content">01 (+81) 8000 7159</p>
       </div>
       <div class="tile is-child text-tile">
-        <h1 class="sections-title">Visítanos</h1>
+        <h1 class="sections-title">
+          <fa class="icons" :icon="fas.faAt"/>
+        </h1>
+        <p class="sections-content">contacto@nui.com.mx</p>
+      </div>
+      <div class="tile is-child text-tile">
+        <h1 class="sections-title">
+          <fa class="icons" :icon="fas.faMapMarkerAlt"/>
+        </h1>
         <p class="sections-content">
           Ricardo Margain 575
           <br>Edificio C Int. 100
@@ -20,19 +26,24 @@
         </p>
       </div>
     </div>
-    <div class="tile is-8 is-parent">
-      <div class="tile is-child map-image">
-        <Maps></Maps>
-      </div>
+    <div class="tile is-7 is-parent">
+      <Maps></Maps>
     </div>
   </div>
 </template>
 
 <script>
-import Maps from "~/components/complete/Maps.vue"
+import { fas } from "@fortawesome/free-solid-svg-icons"
+import Maps from "~/components/complete/Map.vue"
+
 export default {
   components: {
     Maps
+  },
+  computed: {
+    fas() {
+      return fas
+    }
   }
 }
 </script>
@@ -48,7 +59,7 @@ export default {
   @include main-width("normal");
 
   @media (max-width: $breakpoint-sm) {
-    margin-top: 100px !important;
+    margin-top: 50px !important;
     margin-bottom: 100px !important;
   }
 }
@@ -57,6 +68,14 @@ export default {
   @media (max-width: $breakpoint-sm) {
     margin-bottom: 30px;
   }
+}
+
+.text-tile {
+  text-align: center;
+}
+
+.tile.is-child.first-tile {
+  margin-top: 1.5rem !important;
 }
 
 .text-tile-one {
@@ -70,9 +89,5 @@ export default {
 
 .sections-content {
   @include sections-content;
-}
-
-.map-image {
-  min-height: 600px;
 }
 </style>

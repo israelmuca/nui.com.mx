@@ -3,7 +3,10 @@
     <Header>
       <template v-slot:text>
         <h1 class="header-title">Esto es Nui</h1>
-        <p class="header-subtitle">Nui Tecnologías Educativas es una empresa mexicana, con origen en Monterrey y ahora con una nueva sede en la Ciudad de México, dedicada al desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo. Nuestro objetivo es apoyar a las instituciones en México en la adopción de soluciones tecnológicas de vanguardia, que abonen y aporten valor.</p>
+        <p class="header-subtitle">
+          Nui Tecnologías Educativas es una empresa mexicana, con origen en Monterrey y ahora con una nueva sede en la Ciudad de México, dedicada al desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo.
+          <br>Nuestro objetivo es apoyar a las instituciones en México en la adopción de soluciones tecnológicas de vanguardia, que abonen y aporten valor.
+        </p>
       </template>
       <template v-slot:image>
         <img class="rotate" src="~static/svg/index-people-crane.svg" alt>
@@ -11,10 +14,11 @@
     </Header>
     <Box>
       <h1 class="sections-title has-text-centered">Revolución Industrial 4.0</h1>
-      <h3
-        class="sections-subtitle has-text-justified"
-      >Estamos viviendo la siguiente Revolución Industrial, mientras convergen tecnologías digitales, físicas y biológicas, nuestra sociedad está cambiando.
-      <br><br>Las instituciones tienen que adaptarse a los tiempos que se viven. Apalancándose de sistemas en la nube y tecnologías digitales podemos modernizar a las instituciones permitiéndoles mayor eficiencia y eficacia.</h3>
+      <h3 class="sections-subtitle has-text-justified">
+        Estamos viviendo la siguiente Revolución Industrial, mientras convergen tecnologías digitales, físicas y biológicas, nuestra sociedad está cambiando.
+        <br>
+        <br>Las instituciones tienen que adaptarse a los tiempos que se viven. Apalancándose de sistemas en la nube y tecnologías digitales podemos modernizar a las instituciones permitiéndoles mayor eficiencia y eficacia.
+      </h3>
     </Box>
     <TwoColumns>
       <template v-slot:left>
@@ -22,22 +26,31 @@
       </template>
       <template v-slot:right>
         <h1 class="title">OCDE: Estrategía de competencias, destrezas y habilidades de México</h1>
-        <p
-          class="content has-text-justified"
-        >En el diagnósito realizado por la OCDE para México, dejan muy claro que las competencias se han convertido en el <strong>factor clave para lograr el bienestar individual y el éxito económico de una sociedad</strong>.
-        <br><br>Entonces, con una inversión adecuada en la educación de vanguardia, el progreso tecnológico <strong>se verá transformado en crecimiento.</strong>
-        <br><br><strong>El uso eficaz de las competencias en el trabajo es importante para el éxito de México y sus ciudadanos.</strong></p>
+        <p class="content has-text-justified">
+          En el diagnósito realizado por la OCDE para México, dejan muy claro que las competencias se han convertido en el
+          <strong>factor clave para lograr el bienestar individual y el éxito económico de una sociedad</strong>.
+          <br>
+          <br>Entonces, con una inversión adecuada en la educación de vanguardia, el progreso tecnológico
+          <strong>se verá transformado en crecimiento.</strong>
+          <br>
+          <br>
+          <strong>El uso eficaz de las competencias en el trabajo es importante para el éxito de México y sus ciudadanos.</strong>
+        </p>
       </template>
     </TwoColumns>
     <TwoColumns>
       <template v-slot:left>
         <h1 class="title">Las economías se están digitalizando</h1>
-        <p
-          class="content has-text-justified"
-        >En EUA, el 71% de todos los trabajos requieren de <strong>habilidades digitales</strong>. Percibiendo más de un 50% de mayor remuneración promedio los trabajos con enfoque en la computación.
-        <br><br>La digitalización está asociada con un aumento de la remuneración y la resiliencia laboral frente a la automatización.
-        Un claro ejemplo de esto, es las 5 empresas más valiosas del mundo, Apple, Google, Microsoft y Amazon. Empresas cuyo valor gira alrededor de la tecnología.
-        <br><br><strong> Esto nos obliga a voltear a ver a la enseñanza de la tecnología y código como una necesidad educativa para jóvenes y adultos por igual.</strong></p>
+        <p class="content has-text-justified">
+          En EUA, el 71% de todos los trabajos requieren de
+          <strong>habilidades digitales</strong>. Percibiendo más de un 50% de mayor remuneración promedio los trabajos con enfoque en la computación.
+          <br>
+          <br>La digitalización está asociada con un aumento de la remuneración y la resiliencia laboral frente a la automatización.
+          Un claro ejemplo de esto, es las 5 empresas más valiosas del mundo, Apple, Google, Microsoft y Amazon. Empresas cuyo valor gira alrededor de la tecnología.
+          <br>
+          <br>
+          <strong>Esto nos obliga a voltear a ver a la enseñanza de la tecnología y código como una necesidad educativa para jóvenes y adultos por igual.</strong>
+        </p>
       </template>
       <template v-slot:right>
         <img class="no-rotate" src="~static/svg/index-female-male-books.svg" alt>

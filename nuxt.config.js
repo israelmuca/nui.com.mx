@@ -34,7 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src:'~/plugins/vue-particles', ssr: false },
+    { src: '~/plugins/vue-particles', ssr: false },
     { src: "~/plugins/maps.js" }
   ],
 
@@ -42,6 +42,15 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        }
+      ]
+    }],
     '@nuxtjs/dotenv',
     '@nuxtjs/axios'
   ],
@@ -63,7 +72,7 @@ export default {
     BASE_URL: process.env.BASE_URL,
     MAIL_TO: process.env.MAIL_TO
   },
-  
+
   /*
   ** Build configuration
   */

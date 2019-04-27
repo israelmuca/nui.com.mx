@@ -15,6 +15,10 @@
 .two-columns {
   @include main-width("normal");
 
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 50px !important;
+  }
+
   .left-column {
     padding-right: 25px;
     & {

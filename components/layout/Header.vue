@@ -136,9 +136,10 @@ export default {
       @include transition(0.5);
     }
 
-    .is-active {
+    .navbar-menu.is-active {
       background-color: rgba(0, 0, 0, 0) !important;
       box-shadow: none;
+      margin-top: -50px;
     }
 
     .nuxt-link-active {
@@ -178,7 +179,7 @@ export default {
   z-index: 100;
   padding-right: 0px;
 
-  margin-top: -550px;
+  margin-top: -525px;
   margin-bottom: 0px !important;
 
   & {
