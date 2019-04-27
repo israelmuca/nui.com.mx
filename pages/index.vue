@@ -57,6 +57,7 @@
       </template>
     </TwoColumns>
     <!-- <WideGallery></WideGallery> -->
+    <Arrows :data="data"></Arrows>
     <Box>
       <ContactForm></ContactForm>
     </Box>
@@ -69,6 +70,7 @@ import Box from "~/components/Box.vue"
 import TwoColumns from "~/components/TwoColumns.vue"
 /* import WideGallery from "~/components/WideGallery.vue" */
 import ContactForm from "~/components/ContactForm.vue"
+import Arrows from "~/components/Arrows.vue"
 
 export default {
   components: {
@@ -76,7 +78,19 @@ export default {
     Box,
     TwoColumns,
     /* WideGallery, */
-    ContactForm
+    ContactForm,
+    Arrows
+  },
+  data() {
+    return {
+      data: {
+        left: null,
+        right: {
+          url: "/nuestraoferta",
+          text: "nuestra oferta"
+        }
+      }
+    }
   }
 }
 </script>

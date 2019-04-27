@@ -210,6 +210,17 @@ $breakpoint-xl: 1500px;
   text-transform: none;
 }
 
+@mixin arrows-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  color: $black;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.6px;
+
+  text-transform: uppercase;
+}
+
 @mixin footer-content {
   font-family: "OpenSans", sans-serif;
   font-size: 14px;

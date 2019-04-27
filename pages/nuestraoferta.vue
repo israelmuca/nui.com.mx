@@ -48,6 +48,7 @@
     </WideImage>
     <CommonConcerns></CommonConcerns>
     <DoubleSlider></DoubleSlider>
+    <Arrows :data="data"></Arrows>
     <Box>
       <ContactForm></ContactForm>
     </Box>
@@ -62,6 +63,7 @@ import CommonConcerns from "~/components/complete/CommonConcerns.vue"
 import DoubleSlider from "~/components/complete/DoubleSlider.vue"
 import Box from "~/components/Box.vue"
 import ContactForm from "~/components/ContactForm.vue"
+import Arrows from "~/components/Arrows.vue"
 
 export default {
   components: {
@@ -71,7 +73,22 @@ export default {
     CommonConcerns,
     DoubleSlider,
     Box,
-    ContactForm
+    ContactForm,
+    Arrows
+  },
+  data() {
+    return {
+      data: {
+        left: {
+          url: "/",
+          text: "nosotros"
+        },
+        right: {
+          url: "/contacto",
+          text: "contácto"
+        }
+      }
+    }
   }
 }
 </script>
