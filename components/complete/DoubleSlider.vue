@@ -162,6 +162,7 @@ export default {
 
 .cc-slide-content {
   @include cc-slide-content;
+  margin-bottom: 10px;
   &::before {
     content: url("~static/svg/common-concerns/checkmark.svg");
     padding-right: 15px;
