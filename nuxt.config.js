@@ -50,7 +50,7 @@ export default {
         hid: "og:image",
         property: "og:image",
         content:
-          "http://nui.com.mx/_nuxt/img/7c38d21.svg"
+          "https://github.com/israelmuca/nui.com.mx/raw/master/static/logos/nui-logo-blue-white.png"
       },
       // Twitter's Card Markup
       {
@@ -74,7 +74,7 @@ export default {
         hid: "twitter:image",
         name: "twitter:image",
         content:
-          "http://nui.com.mx/_nuxt/img/7c38d21.svg"
+          "https://github.com/israelmuca/nui.com.mx/raw/master/static/logos/nui-logo-blue-white.png"
       }
     ],
     link: [
