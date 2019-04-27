@@ -16,7 +16,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Nui - Tecnologías Educativas - - Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
+          "Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
       },
       {
         hid: "keywords",
@@ -44,7 +44,7 @@ export default {
         hid: "og:description",
         property: "og:description",
         content:
-          "Nui - Tecnologías Educativas - - Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
+          "Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
       },
       {
         hid: "og:image",
@@ -68,7 +68,7 @@ export default {
         hid: "twitter:description",
         name: "twitter:description",
         content:
-          "Nui - Tecnologías Educativas - - Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
+          "Desarrollo y comercialización de sistemas informáticos, plataformas basadas en la nube e infraestructura tecnológica con enfoque en el sector educativo."
       },
       {
         hid: "twitter:image",
