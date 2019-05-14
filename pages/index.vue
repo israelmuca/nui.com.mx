@@ -15,9 +15,11 @@
     <Box>
       <h1 class="sections-title has-text-centered">Revolución Industrial 4.0</h1>
       <h3 class="sections-subtitle has-text-justified">
-        Estamos viviendo la siguiente Revolución Industrial, mientras convergen tecnologías digitales, físicas y biológicas, nuestra sociedad está cambiando.
+        A finales del siglo XVII fue la máquina de vapor quien protagonizo la primer revolución industrial, posteriormente con la llegada de la electricidad y las líneas de producción en masa nos levan a una segunda etapa, unos 100 años más tarde y con la llegada de los sistemas computacionales, las líneas de producción automatizadas y las tarjetas lógicas programables es cuando entramos en lo que llamamos la tercera revolución industrial, cada etapa ha representado avances significativos en el cómo hacemos las cosas y los beneficios que esto ha traído a la humanidad. Esta vez, serán los robots integrados a sistemas IoT los responsables de una transformación radical.
         <br>
-        <br>Las instituciones tienen que adaptarse a los tiempos que se viven. Apalancándose de sistemas en la nube y tecnologías digitales podemos modernizar a las instituciones permitiéndoles mayor eficiencia y eficacia.
+        <br>Marcada por la convergencia de tecnologías digitales, físicas y biológicas, esta nueva etapa cambiará el mundo tal como lo conocemos, basándose en sistemas ciberfísicos, que combinan infraestructura física con software, sensores, nanotecnología y tecnología digital de comunicaciones. Cambiando las reglas de los empleos y de la economía a nivel global, es la receta perfecta para una cuarta revolución industrial.
+        <br>
+        <br>Invertir en las competencias acorde a los tiempos en que se vive es un factor clave para el éxito. Las Naciones, empresas, instituciones y personas que enfrenten el reto a tiempo y de forma adecuada, tendrá una mejor posición respecto a otros, logrando así aprovechar los beneficios de la innovación tecnológica.
       </h3>
     </Box>
     <!-- <TwoColumns>
@@ -55,7 +57,7 @@
       <template v-slot:right>
         <img class="no-rotate" src="~static/svg/index-female-male-books.svg" alt>
       </template>
-    </TwoColumns> -->
+    </TwoColumns>-->
     <!-- <WideGallery></WideGallery> -->
     <Arrows :data="data"></Arrows>
     <Box>
