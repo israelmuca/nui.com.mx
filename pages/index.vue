@@ -20,7 +20,7 @@
         <br>Las instituciones tienen que adaptarse a los tiempos que se viven. Apalancándose de sistemas en la nube y tecnologías digitales podemos modernizar a las instituciones permitiéndoles mayor eficiencia y eficacia.
       </h3>
     </Box>
-    <TwoColumns>
+    <!-- <TwoColumns>
       <template v-slot:left>
         <img class="rotate" src="~static/svg/ca-people-rocket-formal.svg" alt>
       </template>
@@ -55,7 +55,7 @@
       <template v-slot:right>
         <img class="no-rotate" src="~static/svg/index-female-male-books.svg" alt>
       </template>
-    </TwoColumns>
+    </TwoColumns> -->
     <!-- <WideGallery></WideGallery> -->
     <Arrows :data="data"></Arrows>
     <Box>
