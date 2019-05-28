@@ -1,6 +1,6 @@
 # My company's webpage with a serverless function to mail the contact form
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0df48d1d-8f7e-4541-82b9-4e3ce6027d9e/deploy-status)](https://app.netlify.com/sites/nui/deploys)  
-> A Nuxt.js static website with animations, transitions and a Contact Form
+> A Nuxt.js static website with animations, transitions and a serverless Contact Form
 
 ## Features
 - [Nuxt.js](https://nuxtjs.org/) Static Site Generation for easy hosting.
