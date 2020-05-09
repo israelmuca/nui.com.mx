@@ -4,22 +4,19 @@
       <div class="level-left">
         <div class="level-item">
           <nuxt-link to="/">
-            <img class="nui-logo" src="~static/logos/nui-logo.svg">
+            <img class="nui-logo" src="~static/logos/nui-logo.svg" />
           </nuxt-link>
         </div>
       </div>
       <div class="level-right">
         <div class="level-item">
           <p class="footer-content">
-            Ricardo Margain 575
-            <br>Edificio C Int. 100
-            <br>Col. Santa Engracia
-            <br>S.P.G.G., N.L.
-            <br>C.P. 66267
-            <br>
-            <br>01 (+81) 8000 7159
-            <br>
-            <br>contacto@nui.com.mx
+            Lago Malar 32, int. 204
+            <br />Cuauhtémoc Pensil, Miguel Hidalgo <br />CDMX, CP. 11490
+            <br />
+            <br /><fa class="icons" :icon="fab.faWhatsapp" /> +52 1 81 1997 8229
+            <br />
+            <br />contacto@nui.com.mx
           </p>
         </div>
       </div>
@@ -27,8 +24,20 @@
   </footer>
 </template>
 
+<script>
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+export default {
+  computed: {
+    fab() {
+      return fab
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
-@import "~/assets/css/main.scss";
+@import '~/assets/css/main.scss';
 
 .footer {
   background-color: $dark-blue;
@@ -40,7 +49,7 @@
   }
 
   .level {
-    @include main-width("normal");
+    @include main-width('normal');
 
     .nui-logo {
       height: 100px;

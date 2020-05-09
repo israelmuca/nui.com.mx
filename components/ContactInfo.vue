@@ -3,26 +3,23 @@
     <div class="tile is-4 is-vertical is-parent text-tiles">
       <div class="tile is-child text-tile first-tile">
         <h1 class="sections-title">
-          <fa class="icons" :icon="fas.faPhone"/>
+          <fa class="icons" :icon="fab.faWhatsapp" />
         </h1>
-        <p class="sections-content">01 (+81) 8000 7159</p>
+        <p class="sections-content">+52 1 81 1997 8229</p>
       </div>
       <div class="tile is-child text-tile">
         <h1 class="sections-title">
-          <fa class="icons" :icon="fas.faAt"/>
+          <fa class="icons" :icon="fas.faAt" />
         </h1>
         <p class="sections-content">contacto@nui.com.mx</p>
       </div>
       <div class="tile is-child text-tile">
         <h1 class="sections-title">
-          <fa class="icons" :icon="fas.faMapMarkerAlt"/>
+          <fa class="icons" :icon="fas.faMapMarkerAlt" />
         </h1>
         <p class="sections-content">
-          Ricardo Margain 575
-          <br>Edificio C Int. 100
-          <br>Col. Santa Engracia
-          <br>S.P.G.G., N.L.
-          <br>C.P. 66267
+          Lago Malar 32, int. 204
+          <br />Cuauhtémoc Pensil, Miguel Hidalgo <br />CDMX, CP. 11490
         </p>
       </div>
     </div>
@@ -33,8 +30,9 @@
 </template>
 
 <script>
-import { fas } from "@fortawesome/free-solid-svg-icons"
-import Maps from "~/components/complete/Map.vue"
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import Maps from '~/components/complete/Map.vue'
 
 export default {
   components: {
@@ -43,20 +41,22 @@ export default {
   computed: {
     fas() {
       return fas
+    },
+    fab() {
+      return fab
     }
   }
 }
 </script>
 
-
 <style lang="scss" scoped>
-@import "~/assets/css/main.scss";
+@import '~/assets/css/main.scss';
 
 .main-contact-info {
   margin-top: 200px !important;
   margin-bottom: 100px !important;
   margin-right: 0px !important;
-  @include main-width("normal");
+  @include main-width('normal');
 
   @media (max-width: $breakpoint-sm) {
     margin-top: 50px !important;
